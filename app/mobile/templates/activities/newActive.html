@@ -1,0 +1,509 @@
+<title>欣冠理财注册</title>
+<style>
+	body {
+		font-family:  "微软雅黑", helvetica, arial, verdana, tahoma, sans-serif !important;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	.loginwarp .shareRegisterBox{
+		position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+	}
+	.shareRegisterBox1{
+		position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+	}
+
+	.shareRegisterBox .boxTitle{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -4.125rem;
+		margin-left: -3.975rem;
+		width:7.95rem;
+		height:8.25rem;
+		
+		background: url(mobile/resource/images/login/boxTitle.png) center center no-repeat;
+		background-size: 7.95rem 8.25rem;
+	}
+
+	.shareRegisterBox1 .boxTitle1{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -4.125rem;
+		margin-left: -3.975rem;
+		width:7.95rem;
+		height:8.25rem;
+		
+		background: url(mobile/resource/images/login/boxTitle1.png) center center no-repeat;
+		background-size: 7.95rem 8.25rem;
+	}
+
+	.shareRegisterTop {
+		padding: 0px;
+		width: 100%;
+		margin: 0px;
+		position: relative;
+	}
+	
+	.shareRegisterTop img,.boxBtn img{
+		vertical-align: top;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		border: none;
+		height: auto;
+		display: block;
+	}
+    .boxBtn{
+    	width: 6.26666rem;
+    	height: 1.31666rem;
+    	margin: 6.16666rem auto 0px auto;
+    }
+
+      .boxBtn1{
+    	width: 6.26666rem;
+    	height: 1.31666rem;
+    	margin: 6.16666rem auto 0px auto;
+    }
+	.loginwarp input {
+		outline: none;
+	}
+	
+	 .loginwarp :-moz-placeholder {
+		/* Mozilla Firefox 4 to 18 */
+		color: #cecece;
+	}
+	
+	.loginwarp  ::-moz-placeholder {
+		/* Mozilla Firefox 19+ */
+		color: #cecece;
+	}
+	
+	.loginwarp input:-ms-input-placeholder,
+	.loginwarp textarea:-ms-input-placeholder {
+		color: #cecece;
+	}
+	
+	.loginwarp input::-webkit-input-placeholder,
+	.loginwarp textarea::-webkit-input-placeholder {
+		color: #cecece;
+	}
+	
+	
+	.loginwarp .check-inner {
+		width: 100%;
+		/*height: 20px;*/
+		margin: 0px auto 0px auto;
+		font-size: 12px;
+		overflow: hidden;
+		
+	}
+	
+	[data-dpr="2"] .check-inner{
+		font-size: 24px;
+	}
+	
+	[data-dpr="3"] .check-inner{
+		font-size: 36px;
+	}
+	.loginwarp .check-inner label {
+		width:100%;
+		
+		float: right;
+		padding: 0;
+		margin: 0.25rem 0rem 0.625rem 0px;
+		color: #fff;
+		
+	}
+	.loginwarp .check-inner input {
+		width: 0.3rem;
+		height: 0.3rem;
+		vertical-align: middle;
+		margin-top: -0.03125rem;
+		cursor: pointer;
+	}
+	
+	.loginwarp .check-inner a {
+		color: #fff;
+	}
+	
+	.loginwarp .check-inner>label {
+		font-weight: normal;
+	}
+	
+	
+	
+ .loginwarp {
+		width: 100%;
+
+		overflow: hidden;
+		position: relative;
+		height: 10.64rem;
+		background-color: rgb(239,95,71);
+	}
+	
+	.loginwarp .loginBg {
+		width: 100%;
+		margin: 0px auto;
+		
+		/* padding-top: 0.71rem; */
+		position:absolute;
+		top: 0.26rem;
+		left: 0;
+
+	}
+	
+	.loginwarp .login {
+		padding: 0px 0.9rem;
+		
+	}
+	
+	.loginwarp .login h2 {
+		font-size: 26px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		color: #fff;
+		text-align: center;
+	}
+	
+	.loginwarp .inputGroup {
+		width:100%;
+		margin: 0px auto;
+		overflow: hidden;
+		background-color: #fff;
+		border-radius: 15px;
+		margin-bottom: 0.26rem;
+		padding: 0 !important;
+	}
+	.loginwarp .shareRegisterPhone,.shareRegisterVerifyCode,.shareRegisterPhoneCode,.shareRegisterRecommendCode,.shareRegisterPassword{
+		float: left;
+		
+		height: 1.17rem;
+		width: 1.0666rem;
+	}
+	.loginwarp .shareRegisterPhone{
+		
+		background: url(mobile/resource/images/login/name.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.loginwarp .shareRegisterVerifyCode{
+		background: url(mobile/resource/images/login/number.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.loginwarp .shareRegisterPhoneCode{
+		background: url(mobile/resource/images/login/code.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.loginwarp .shareRegisterRecommendCode{
+		background: url(mobile/resource/images/login/phone.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.loginwarp .shareRegisterPassword{
+		background: url(mobile/resource/images/login/psd.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.loginwarp .inputName,.loginwarp .inputPassword,.loginwarp .verifyCode,.loginwarp .phoneCodeBg{
+		float: right;
+		
+		height: 1.17rem;
+		
+		width: 7.066rem;
+		
+		position: relative;
+		background-image: none !important;
+		padding: 0;
+	}
+	.loginwarp .inputName input,
+	.loginwarp .inputPassword input {
+		background:transparent;
+		padding: 0.25rem 0;
+		height: 1.17rem;
+		border: 0px;
+		width: 100%;
+		/*font-weight: 500;*/
+		font-size: 14px;
+		color: #a7a5a5;
+	}
+	.loginwarp .verifyCode input,.phoneCode input{
+		width: 4rem;
+		height: 1.17rem;
+		border: 0px;
+		/*font-size: 14px;*/
+		color: #a7a5a5;
+		padding: 0.25rem 0;
+	}
+	.loginwarp [data-dpr="2"] .inputName input,.loginwarp [data-dpr="2"] .inputPassword input,[data-dpr="2"] .verifyCode input,.loginwarp [data-dpr="2"] .phoneCode input ,.loginwarp [data-dpr="2"] .verifySms{
+		font-size: 28px;
+	}
+	
+	.loginwarp [data-dpr="3"] .inputName input,.loginwarp [data-dpr="3"] .inputPassword input,.loginwarp [data-dpr="3"] .verifyCode input,[data-dpr="3"] .phoneCode input ,.loginwarp [data-dpr="3"] .verifySms{
+		font-size: 42px;
+	}
+
+	.loginwarp .verifySms {
+		position: absolute;
+		top: 0.16rem;
+		right: 0.4rem;
+		width: 2.53125rem;
+		height: 0.859375rem;
+		line-height: 0.859375rem;
+		border: 1px solid #ff4773;
+		border-radius: 0.09375rem;
+		/*font-size: 14px;*/
+		color: #ff4773;
+	}
+	
+	.loginwarp .verifySms span {
+		width: 100%;
+		height: 0.859375rem;
+		line-height: 0.859375rem;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
+		font-weight: bold;
+	}
+	
+	.loginwarp .verifyImg {
+		position: absolute;
+		top: 0.16rem;
+		right: 0.4rem;
+		width: 2.53125rem;
+		height: 0.859375rem;
+		background: #fff;
+	}
+	
+	.loginwarp .verifyImg img {
+		width: 2.53125rem;
+		height: 0.859375rem;
+		display: inline-block;
+	}
+	
+	.loginwarp .loginBtn {
+		width: 7.0666rem;
+		text-align: center;
+		margin:0px auto ;
+		
+		font-size: 16px;
+	}
+	
+	.loginwarp .loginBtn .spanBlock {
+		background: #fff;
+		border-radius: 0.6rem;
+		width: 100%;
+		height: 1.066rem;
+		line-height: 1.066rem;
+		text-align: center;
+		position: relative;
+		color: #ff4773;
+		display: inline-block;
+		/* box-shadow: 0px 10px 20px rgba(222, 82, 47, 0.8); */
+	}
+	.loginwarp .loginBtn .spanBlock img{
+		position: absolute;
+		top: 0.62rem;
+		left: 0.16rem;
+		width: 0.64rem;
+		height: 0.333rem;
+	}
+	.loginwarp .nowBlock{
+		margin-top: 0.5333rem;
+		background: #de522f;
+		border-radius: 0.6rem;
+		width: 100%;
+		height: 1.066rem;
+		line-height: 1.066rem;
+		text-align: center;
+		
+		color: #fff;
+		display: inline-block;
+		box-shadow: 0px 0px 10px rgba(222, 82, 47, 0.8);
+	}
+	.loginwarp .loginBtn .spanNone {
+		background: #ccc;
+		border-radius: 0.6rem;
+		width: 100%;
+		height: 1.066rem;
+		line-height: 1.066rem;
+		text-align: center;
+		color: #999;
+		display: none;
+	}
+	[data-dpr="2"] .loginBtn{
+		font-size: 32px;
+	}
+	
+	[data-dpr="3"] .loginBtn{
+		font-size: 48px;
+	}
+	
+	[data-dpr="2"] .check-text{
+		font-size: 30px;
+	}
+	[data-dpr="3"] .check-text{
+		font-size: 50px;
+	}
+	.loginwarp input:-webkit-autofill,
+	.loginwarp textarea:-webkit-autofill,
+	.loginwarp select:-webkit-autofill {
+		-webkit-text-fill-color: #ededed !important;
+		-webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+		background-color: transparent;
+		background-image: none;
+		transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间  
+	}
+	.loginwarp .check-text{
+		text-align: center;
+		font-size: 24px;
+		color: #fe6301;
+		margin-top: 0.4rem;
+	}
+	.loginwarp .check-text .check-text-bg{
+		display: inline-block;
+		width: 0.453125rem;
+		height: 0.453125rem;
+		vertical-align: middle;
+		background-image: url(mobile/resource/images/login/check-text-bg.png);
+		background-size: 0.453125rem 0.453125rem;
+	}
+
+	 .loginTip{
+		font-size:16px;
+		text-align: center;
+		background-color: rgb(239,95,71);
+		padding-bottom: 13px;
+		color: #fff;
+	}
+.loginTip a{
+		color: #fff;
+	}
+	[data-dpr="2"] .loginTip{
+		font-size:32px;
+	}
+	[data-dpr="3"] .loginTip{
+		font-size:48px;
+	}
+	
+.TIPS{
+		color: #cfc5b3;
+		font-size: 12px;
+		text-align: center;
+		background-color: rgb(239,95,71);
+		padding: 20px 0;
+	}
+	[data-dpr="2"] .TIPS{
+		font-size:24px;
+	}
+	[data-dpr="3"] .TIPS{
+		font-size:36px;
+	}
+
+</style>
+<div class="shareRegisterTop">
+	<img src="mobile/resource/images/login/abc1.png" />
+	
+</div>
+<div class="loginwarp">
+	
+	<div class="loginBg">
+		<div class="login">
+			<div style="display: block;" class="login-inner-tab">
+				<div class="inputGroup">
+                    <div class="shareRegisterPhone"></div>
+					<div class="inputName" data-rel="r_phone" data-container="body" data-toggle="popover" data-content="手机号码不能为空">
+						<input ng-model="registerInfo.userInfo.phone" type="text" placeholder="请输入手机号码" autocomplete="new-password" name="phone">
+					</div>
+				</div>
+				<div class="inputGroup">
+					<div class="shareRegisterVerifyCode"></div>
+					<div class="verifyCode" data-rel="l_verifyCode" data-container="body" data-toggle="popover" data-content="验证码不能为空">
+						<input name="l_verifyCode" type="text" ng-model="imgCode" placeholder="请输入图片验证码" autocomplete="new-password">
+						<div class="verifyImg">
+							<img id="verificationCode" src="" ng-click="changeVerificationCode()">
+						</div>
+					</div>
+				</div>
+				<div class="inputGroup ">
+					<div class="shareRegisterPhoneCode"></div>
+					<div class="phoneCodeBg" data-rel="r_verifyCode" data-container="body" data-toggle="popover" data-content="验证码不能为空">
+						<div class="phoneCode"><input ng-model="registerInfo.code" type="text" name="code" autocomplete="new-password" required="" placeholder="获取手机验证码"></div>
+
+						<div class="verifySms">
+							<span ng-click="sendSms()">获取验证码</span>
+						</div>
+					</div>
+				</div>
+				<div class="inputGroup">
+					<div class="shareRegisterPassword"></div>
+					<div class="inputPassword" data-rel="l_password" data-container="body" data-toggle="popover" data-content="密码不能为空">
+						<input type="password" name="password" value="" style="display:none;" autocomplete="off" />
+						<input ng-model="registerInfo.user.password" type="password" required="" placeholder="请设置登录密码" autocomplete="new-password" name="password">
+					</div>
+				</div>
+
+				<div class="inputGroup">
+					<div class="shareRegisterRecommendCode"></div>
+					<div class="inputPassword" data-rel="r_recommendId" data-container="body" data-toggle="popover" data-content="">
+						<input ng-model="registerInfo.userInfo.recommendCode" type="text" placeholder="请输入邀请人手机号（选填）">
+					</div>
+				</div>
+				<div class="check-inner">
+					<label data-rel="r_checkRead" data-container="body" data-toggle="popover" data-content="您必须同意注册协议"><input checked="checked" ng-click="checkbox($event)" name="checkRead" type="checkbox">&nbsp;&nbsp;已阅读并同意<a
+                        href="/mobile/registration" >《欣冠在线注册协议》</a></label>
+				</div>
+				<div class="loginBtn">
+					<div style="cursor: pointer;" ng-click="register()" class="spanBlock">
+					注册立享好礼
+					<img src="mobile/resource/images/login/SmallN.png" />
+					</div>
+					<div style="cursor: pointer;" class="spanNone">注册立领888元红包</div>
+
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+</div>
+ <p class="loginTip" ><a href="/mobile/login">已注册</a> 丨 <a href="/mobile/login">立即登录</a></p>
+<p class="TIPS" >确定您的帐号是当前页面注册，否则直接登陆奖励不予发放。</p>	
+<div class="shareRegisterTop">
+	<img src="mobile/resource/images/login/N2.jpg" />
+	<img src="mobile/resource/images/login/abc2.png" />
+	<img src="mobile/resource/images/login/N4.jpg?v=2" />
+
+</div>
+
+
+<div class="shareRegisterBox1" >
+	
+	<div class="boxTitle1">
+		  <div class="boxBtn1">
+		  	 <img src="mobile/resource/images/login/boxBtn.png" ng-click="closeBox1()">
+		  </div>
+	</div>
+	
+</div>
+ 

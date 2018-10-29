@@ -1,0 +1,248 @@
+<head>
+
+    <title>公司介绍</title>
+</head>
+<style>
+    body {
+        background: #fff !important;
+    }
+
+    @charset "utf-8";
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    html {
+        height: 100%
+    }
+
+    body {
+        height: 100%;
+        background: url(../images/shouye_nvsheng_bg.png);
+        background-size: 100% 100%
+    }
+
+    #header img {
+        width: 100%
+    }
+
+    .honorSwiper.swiper-container {
+        width: 100%;
+        -webkit-perspective: 1200px;
+        -moz-perspective: 1200px;
+        -ms-perspective: 1200px;
+        perspective: 1200px;
+        background: #FFFFFF;
+    }
+
+    /*.swiper-wrapper {
+        margin-top: 10px
+    }*/
+
+    .honorSwiper .swiper-slide {
+        width: 70%;
+
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d
+    }
+
+    .honorSwiper .swiper-slide .main-img {
+        width: 90%;
+        height: 6.66rem;
+        margin: 0 auto;
+        display: block
+    }
+
+    .honorSwiper .swiper-slide-active .main-img {
+        height: 7.66rem;
+    }
+
+    .honorSwiper .swiper-slide-prev {
+        padding-top: 0.5rem;
+    }
+
+    .honorSwiper .swiper-slide-next {
+        padding-top: 0.5rem;
+    }
+
+    /*#pagination {*/
+    /*position: absolute;*/
+    /*bottom: 100px;*/
+    /*width: 100%;*/
+    /*height: 20px;*/
+    /*}*/
+
+    /*#pagination .swiper-pagination-bullet {*/
+    /*width: 9.5%;*/
+    /*height: 20px;*/
+    /*float: left;*/
+    /*margin: 0 0 0 6.15%;*/
+    /*background: 0;*/
+    /*opacity: 1*/
+    /*}*/
+
+    .honorSwiper.swiper-pagination-bullet i {
+        background: #41203f;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        border-radius: 50px;
+        display: block;
+        font-style: normal;
+        text-align: center;
+        margin: 0 auto;
+        color: #f5b55c
+    }
+
+    .honorSwiper .swiper-pagination-bullet-active i {
+        -webkit-transform: scale(1.5);
+        background: url(mobile/resource/images/choumei/shouye_nvsheng_huangseb.png) no-repeat center 50%;
+        background-size: auto 100%;
+        color: #815d4b
+    }
+
+    /*
+        @media screen and (min-height: 481px) {
+            .swiper-wrapper {
+                margin-top: 20px
+            }
+
+            /*#pagination {*/
+    /*bottom: 110px;*/
+    /*}*/
+    }
+
+    /*@media screen and (min-height: 569px) {
+        .swiper-wrapper {
+            margin-top: 40px
+        }*/
+
+    /*#pagination {*/
+    /*bottom: 120px*/
+    /*}*/
+
+    .honorSwiper .swiper-pagination-bullet i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px
+    }
+
+    }
+    .layui-layer {
+        width: 80% !important;
+    }
+
+    #z_bigimg {
+        /*width: 60%;*/
+        /*height: 60vh;*/
+    }
+
+    #z_bigimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0
+    }
+
+    #footer img {
+        width: 100%;
+        display: block
+    }
+
+   .honorSwiper.swiper-container {
+        padding-bottom: 1rem;
+    }
+
+    #pagination .swiper-pagination-bullet-active {
+        padding: 0.04rem;
+        background: none;
+        border: 0.03rem solid #ff767b;
+        margin-bottom: -0.05rem;
+    }
+
+    .honorSwiper .swiper-slide-prev,.honorSwiper .swiper-slide-next {
+        opacity: 0.5;
+    }
+
+    .teamSwiper{
+        padding:0.46rem 0;
+    }
+
+    .teamSwiper img{
+        width: 6.52rem !important;
+    }
+
+    .teamSwiper .swiper-slide{
+        width: 6.52rem !important;
+        margin-right: 0.53rem;
+    }
+    .teamBox{
+        padding-left: 0.4rem;
+        background: #fff;
+    }
+
+</style>
+<link rel="stylesheet" href="mobile/resource/css/about.css" type="text/css">
+<div ng-cloak>
+    <div class="bannerDiv">
+        <img src="mobile/resource/images/about/aboutIMG1.jpg?v=1"/>
+        <div class="teamBox">
+        <div class="swiper-container teamSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                        src="mobile/resource/images/about/team1.jpg" class="main-img">
+                </div>
+                <div class="swiper-slide" ><img
+                        src="mobile/resource/images/about/team2.jpg" class="main-img"></div>
+                <div class="swiper-slide"><img
+                        src="mobile/resource/images/about/team3.jpg" class="main-img">
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <img src="mobile/resource/images/about/aboutUsimg2.png?v=1"/>
+
+        <div class="swiper-container honorSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-click="showBigimg('mobile/resource/images/about/zlzs3.jpg')"><img
+                        src="mobile/resource/images/about/zlzs3.jpg" class="main-img">
+                </div>
+                <div class="swiper-slide" ng-click="showBigimg('mobile/resource/images/about/zlzs1.jpg')"><img
+                        src="mobile/resource/images/about/zlzs1.jpg" class="main-img"></div>
+                <div class="swiper-slide" ng-click="showBigimg('mobile/resource/images/about/zlzs2.png')"><img
+                        src="mobile/resource/images/about/zlzs2.png" class="main-img">
+                </div>
+
+            </div>
+            <div class="swiper-pagination" id="pagination"></div>
+        </div>
+
+        <img src="mobile/resource/images/about/aboutUsimg5.jpg?v=1"/>
+    </div>
+    <div style="height: 0;overflow: hidden;">
+        <div id="z_bigimg">
+            <img src="" alt="">
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        $(".aboutData li").click(function () {
+            $(".aboutDataCon li").eq($(this).index()).addClass("aboutCurrent").siblings().removeClass("aboutCurrent");
+            $(this).addClass("liCurrent").siblings().removeClass("liCurrent");
+        });
+    });
+</script>

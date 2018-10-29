@@ -1,0 +1,179 @@
+<title>
+    登录</title>
+<style>
+    body {
+        background-image: url("/mobile/resource/images/login/loginBg.jpg") !important;
+        background-size: cover !important;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .h5Loginwarp {
+        width: 100%;
+
+        overflow: auto;
+
+        background-size: 100% 100%;
+    }
+
+    .z_registerHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0.52rem auto 0.64rem;
+        /*color: #fff;*/
+    }
+
+    .z_registerHead span, .z_registerHead a {
+        color: #333;
+        font-size: 0.35rem;
+    }
+
+    .z_nicetomeetyou {
+        color: #333;
+        font-size: 0.7rem;
+        font-weight: bold;
+        overflow: hidden;
+        padding-top: 2.46rem;
+    }
+    .z_nicetomeetyou span{
+        float: left;
+    }
+    .z_nicetomeetyou i{
+        float: left;
+        color: #ff3e45;
+    }
+    .z_registerClose {
+        width: 0.4rem;
+    }
+
+    .z_welcome {
+        color: #666;
+        font-size: 0.4rem;
+    }
+
+    .z_nicetomeetyou, .z_welcome {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 0.64rem;
+    }
+
+    .inputGroup .inputName, .inputGroup .inputPassword {
+        border-bottom: 0.03125rem solid #e6e6e6;
+        height: 1.375rem;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 0.8rem;
+        box-sizing: border-box;
+    }
+    .inputGroup .inputName img, .inputGroup .inputPassword img{
+        position: absolute;
+        width: 0.37rem;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+    .inputGroup .inputName input, .inputGroup .inputPassword input {
+        background: transparent;
+        padding: 0.25rem 0;
+        height: 0.859375rem;
+        border: 0px;
+        width: 100%;
+        font-size: 0.37rem;
+    }
+
+    .inputGroup .inputName input::-webkit-input-placeholder, .inputGroup .inputPassword input::-webkit-input-placeholder {
+
+        font-weight: 100;
+    }
+
+    .forgetPassword {
+       text-align: center;
+
+
+        line-height: 1.6rem;
+    }
+
+    .forgetPassword a {
+        font-size: 0.45rem;
+        color: #212121;
+    }
+
+
+
+    .loginBtn {
+        width: 90%;
+        margin: 0 auto;
+        background: #ff3e45;
+        color: #fff;
+        font-size: 0.45rem;
+        text-align: center;
+        height: 1.33rem;
+        line-height: 1.33rem;
+
+
+    }
+    .h5Loginwarp .back{
+        position: absolute;
+        top: 0.26rem;
+        left: 0.4rem;
+    }
+    .back img{
+        width: 0.74rem;
+        display: block;
+    }
+</style>
+<div ng-cloak>
+
+    <div class="h5Loginwarp">
+
+        <div class="login">
+            <div class="inputGroup">
+                <div class="back">
+                    <a href="/mobile/index">
+                        <img src="mobile/resource/images/login/BACK.jpg" class="z_registerClose"/>
+                    </a>
+
+                </div>
+                <div class="z_nicetomeetyou">
+                    <span>欢迎回  </span><i >来</i>
+                </div>
+                <div class="z_welcome">
+                    理财更轻松 生活更从容
+                </div>
+            </div>
+            <div class="inputGroup">
+
+                <div class="inputName">
+                    <img src="/mobile/resource/images/login/tel.jpg" alt="">
+                    <input type="text" name="phone" required="" placeholder="输入手机号" ng-model="user.name"
+                           autocomplete="new-password">
+                </div>
+            </div>
+
+            <div class="inputGroup">
+                <div class="inputPassword" data-rel="l_password" data-container="body" data-toggle="popover"
+                     data-content="密码不能为空">
+                    <img src="/mobile/resource/images/login/passworld.jpg" alt="">
+                    <input ng-model="user.password" type="password" name="password" required=""
+                           placeholder="6-16位字母和数字登录密码" autocomplete="new-password">
+
+                </div>
+            </div>
+            <div class="forgetPassword">
+
+                <a href="/mobile/findPassword">忘记密码?</a>
+            </div>
+            <div class="loginBtn" ng-click="login()">
+                登录
+            </div>
+            <a class="reg" href="/mobile/register">注册</a>
+
+        </div>
+
+    </div>
+
+
+</div>

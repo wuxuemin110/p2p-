@@ -1,0 +1,131 @@
+
+/*红包、提现规则*/
+.redPacketRuleBg {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+	
+	.ruleContent {
+		font-size: 14px;
+		margin: 0.6rem 0.7rem;
+		color: #666464;
+	}
+	
+	[data-dpr="2"] .ruleContent {
+		font-size: 28px;
+	}
+	
+	[data-dpr="3"] .ruleContent {
+		font-size: 42px;
+	}
+	
+	.ruleContent h3 {
+		font-size: 16px;
+		color: #333;
+		position: relative;
+	}
+	
+	[data-dpr="2"] .ruleContent h3 {
+		font-size: 32px;
+	}
+	
+	[data-dpr="3"] .ruleContent h3 {
+		font-size: 48px;
+	}
+	
+	.ruleContent .date {
+		color: #b2afaf;
+		display: inline-block;
+		padding: 0.3rem 0;
+		width: 100%;
+	}
+	.ruleWord{
+		padding-top: 0.2rem;
+	}
+	.ruleWord p{
+		line-height: 180%;
+	}
+	.ruleWord img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		margin: 0px auto;
+	}
+	
+/*新闻公告*/
+.container {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+		background: #fff;
+	}
+	
+	.newContent {
+		font-size: 14px;
+		margin: 0.5rem 0.4rem;
+	}
+	
+	[data-dpr="2"] .newContent {
+		font-size: 28px;
+	}
+	
+	[data-dpr="3"] .newContent {
+		font-size: 42px;
+	}
+	
+	.newContent h3 {
+		font-size: 16px;
+		color: #333;
+		position: relative;
+		padding-bottom: 0.2rem;
+	}
+	
+	[data-dpr="2"] .newContent h3 {
+		font-size: 32px;
+	}
+	
+	[data-dpr="3"] .newContent h3 {
+		font-size: 48px;
+	}
+	
+	.newContent .date {
+		color: #8d8d92;
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 0.2rem;
+	}
+	.newWord{
+		line-height: 150%;
+	}
+	.newWord img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		margin: 0px auto;
+	}
+	
+/*第三方资料*/
+.newWord p{
+	cursor:pointer;
+}
+
+.imgGrayBg{
+	width: 100%; height: 100%;
+	position: fixed; left: 0; top: 0; z-index: 1000;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+}
+
+.imgGrayBg img{
+	width: 90%; 
+	max-height: 95%;
+	position: absolute;
+    margin: auto;
+    top: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+}

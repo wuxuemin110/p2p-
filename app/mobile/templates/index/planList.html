@@ -1,0 +1,193 @@
+<title>投资列表</title>
+<div ng-cloak>
+
+    <style>
+        .animate-positive {
+            animation: animate-positive 2s;
+            transition: width 1s linear 0s;
+            -webkit-transition: width .6s ease;
+            transition: width 0.6s ease;
+        }
+
+        @-webkit-keyframes animate-positive {
+            0% {
+                width: 0%;
+            }
+        }
+
+        @keyframes animate-positive {
+            0% {
+                width: 0%;
+            }
+        }
+
+
+    </style>
+
+    <div class="main-container-wrap">
+
+        <img class="planImg" src="/mobile/resource/images/common/plan.jpg">
+        <div class="planTitle">
+            <img src="/mobile/resource/images/common/new.png" alt="">
+            <span>新手专享</span>
+        </div>
+        <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" when-scrolled="selectPage()"
+             ng-hide="isLastStationPage||isLocating">
+
+        <div class="choiceList">
+            <ul>
+                <li ng-repeat="item in bottomPlans" ng-if="item.type == 1">
+                    <a href="/mobile/join/{{item.id}}">
+                    <div class="itemName clearfix">
+                        <div class="Name fl">{{item.name}} <i  ng-show='item.rasingRate>0'>加息</i></div>
+                        <div class="Num fr"> {{(item.rate/10) + (item.rasingRate/10)}}%</div>
+                    </div>
+                    <div class="itemDsp clearfix">
+                        <div class="item fl">
+                            <span ng-show='item.stagingUnit=="day"'>{{item.staging}}天</span>
+                            <span ng-show="item.stagingUnit=='month'">{{item.staging}}个月</span>
+                            <span>{{item['minAmount']/100}}元起投</span>
+                            <span>剩余可投{{(item.amount/100-item.nowSum/100)/10000 |
+                                        currency:'':2}}万元</span>
+                        </div>
+                        <div class="itemText fr">期望年化收益率</div>
+                    </div>
+                    <div class="itemprogress clearfix">
+                        <div class="progress fl">
+                            <div class="progressBar">
+                                <b class="WOW animate-positive " style="width:{{((item['nowSum'] / item['amount']) * 100)>100 ? 100:(item['nowSum'] / item['amount']*100) | parseInt}}%;"></b>
+                            </div>
+                            <span>{{((item['nowSum'] / item['amount']) * 100)>100 ?
+                                            100:(item['nowSum'] / item['amount']*100) | parseInt}}%</span>
+                        </div>
+                        <div class="investBox fr">
+                            <div ng-show="{{item.state==0}}" class="investBtn red">立即投资</div>
+                            <div ng-show="{{item.state==1}}" class="investBtn gray">回款中</div>
+                            <div ng-show="{{item.state==2}}" class="investBtn gray">已回款</div>
+                            <div ng-show="{{item.state==3}}" class="investBtn red">预售</div>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bgLine"></div>
+        <div class="planTitle">
+            <img src="/mobile/resource/images/common/xun.png" alt="">
+            <span>精选理财</span>
+        </div>
+        <div class="choiceList">
+            <ul>
+                <li ng-repeat="item in bottomPlans" ng-if="item.type !== 1">
+                    <a href="/mobile/join/{{item.id}}">
+                        <div class="itemName clearfix">
+                            <div class="Name fl">{{item.name}} <i  ng-show='item.rasingRate>0'>加息</i></div>
+                            <div class="Num fr"> {{(item.rate/10) + (item.rasingRate/10)}}%</div>
+                        </div>
+                        <div class="itemDsp clearfix">
+                            <div class="item fl">
+                                <span ng-show='item.stagingUnit=="day"'>{{item.staging}}天</span>
+                                <span ng-show="item.stagingUnit=='month'">{{item.staging}}个月</span>
+                                <span>{{item['minAmount']/100}}元起投</span>
+                                <span>剩余可投{{(item.amount/100-item.nowSum/100)/10000 |
+                                        currency:'':2}}万元</span>
+                            </div>
+                            <div class="itemText fr">期望年化收益率</div>
+                        </div>
+                        <div class="itemprogress clearfix">
+                            <div class="progress fl">
+                                <div class="progressBar">
+                                    <b class="WOW animate-positive " style="width:{{((item['nowSum'] / item['amount']) * 100)>100 ? 100:(item['nowSum'] / item['amount']*100) | parseInt}}%;"></b>
+                                </div>
+                                <span>{{((item['nowSum'] / item['amount']) * 100)>100 ?
+                                            100:(item['nowSum'] / item['amount']*100) | parseInt}}%</span>
+                            </div>
+                            <div class="investBox fr">
+                                <div ng-show="{{item.state==0}}" class="investBtn red">立即投资</div>
+                                <div ng-show="{{item.state==1}}" class="investBtn gray">回款中</div>
+                                <div ng-show="{{item.state==2}}" class="investBtn gray">已回款</div>
+                                <div ng-show="{{item.state==3}}" class="investBtn red">预售</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!--<div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" when-scrolled="selectPage()"
+             ng-hide="isLastStationPage||isLocating">
+            <div class="tzlc-con">
+
+                <div class="investPlan" style="overflow:auto;">
+                    <ul>
+                        <li class="investPlanLi" ng-repeat="item in bottomPlans" >
+                            <a href="/mobile/join/{{item.id}}">
+                                <div class="choicetext z_planListTop">
+                                    <p class="fl">{{item.name}} <span class="z_planListadd"
+                                                                      ng-class='{"z_disable":item.state ==1 || item.state==2}'
+                                                                      ng-show='item.rasingRate>0'>加息</span></p>
+
+                                    <div class="choiceNumer">
+                                        <div class="choiceBar fl">
+                                            <div class="choiceRed animate-positive wow"
+                                                 ng-class='{"z_a":item.state ==1 || item.state==2}'
+                                                 style="width:{{((item['nowSum'] / item['amount']) * 100)>100 ? 100:(item['nowSum'] / item['amount']*100) | parseInt}}%;"></div>
+                                        </div>
+                                        <div ng-class='{"z_disable":item.state ==1 || item.state==2}'
+                                             class="choicePer fr">{{((item['nowSum'] / item['amount']) * 100)>100 ?
+                                            100:(item['nowSum'] / item['amount']*100) | parseInt}}%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choiceDsp clearfix">
+                                    <div class="choiceLeft fl">
+                                        <div class="choiceRate">
+                                            <span class="choiceRatePer"
+                                                  ng-class='{"z_disable":item.state ==1 || item.state==2}'>
+                                            {{item.rate/10}}%
+                                            	 <p class="choiceAdd"
+                                                    ng-class='{"z_disable":item.state ==1 || item.state==2}'
+                                                    ng-show='item.rasingRate>0'>+{{item.rasingRate/10}}%</p>
+                                            </span>
+
+                                        </div>
+                                        <p class="choiceText">预期年化收益率</p>
+                                    </div>
+                                    <div class="choiceRight fr">
+                                        <div ng-show="{{item.state==0}}" class="z_btn1">立即投资</div>
+                                        <div ng-show="{{item.state==3}}" class="z_btn1">预售</div>
+                                        <div ng-show="{{item.state==1}}" class="z_btn2">回款中</div>
+                                        <div ng-show="{{item.state==2}}" class="z_btn2">已回款</div>
+                                    </div>
+                                </div>
+                                <div class="choicetext z_choicebottom">
+
+                                    <p class="TermNumber fr" ng-show='item.stagingUnit=="day"'>{{item.staging}}天</p>
+                                    <p class="TermNumber fr" ng-show="item.stagingUnit=='month'">{{item.staging}}个月</p>
+                                    <p class=" TermNumber fr">100元起投</p>
+                                    <p class=" TermNumber fr">剩余可投{{(item.amount/100-item.nowSum/100)/10000 |
+                                        currency:'':2}}万元</p>
+
+                                </div>
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="wow" style="visibility: hidden;"></div>
+                &lt;!&ndash;fl end&ndash;&gt;
+                <div class="clear"></div>
+            </div>
+            &lt;!&ndash;tzlc-con end&ndash;&gt;
+        </div>-->
+    </div>
+
+    <span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+
+    <!--尾部-->
+    <div ng-include="'mobile/templates/layout/bottom.html'"></div>
+    <!--尾部结束-->
+</div>
+</div>

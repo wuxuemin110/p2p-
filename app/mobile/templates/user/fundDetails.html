@@ -1,0 +1,37 @@
+<title>
+	资金明细</title>
+<div ng-cloak>
+	<div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" when-scrolled="selectPage()" ng-hide="isLastStationPage||isLocating">
+		<div class="fundData">
+			<div ng-repeat="userRepays in itemList" class="tableDiv">
+				<table width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td ng-show="userRepays.state==0">投资成功</td>
+						<td ng-show="userRepays.state==1">充值成功</td>
+						<td ng-show="userRepays.state==2">申请提现</td>
+						<td ng-show="userRepays.state==3">提现成功</td>
+						<td ng-show="userRepays.state==4">提现失败</td>
+						<td ng-show="userRepays.state==5">正常还款</td>
+						<td ng-show="userRepays.state==6">平台奖励</td>
+						<td align="right">可用余额(元)</td>
+					</tr>
+					<tr>
+						<td ng-show="userRepays.outOrIn==0" class="blue">-{{userRepays.money | PointToYuan | currency:"":2}}</td>
+						<td ng-show="userRepays.outOrIn==1" class="red">+{{userRepays.money | PointToYuan | currency:"":2}}</td>
+						<td align="right" class="money">{{userRepays.balance | PointToYuan | currency:"":2}}</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="right" class="fundDate">{{userRepays.createdTime | newDate:'yyyy-MM-dd HH:mm:ss'}}</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+		<span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+	</div>
+
+	<!--<div>
+		<div ng-include="'templates/layout/bottom.html'"></div>
+	</div>-->
+</div>

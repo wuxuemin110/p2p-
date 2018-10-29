@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html  ng-app="myApp" class="no-js" >
+	
+
+	<head>
+
+		<!--<title>欣冠_欣冠官网_专业的互联网金融平台_稳健投资理财的首选</title>-->
+		<meta name="description" content="欣冠是专业的互联网金融服务平台，互联网金融协会理事单位，提供优质借款服务和投资理财服务。提供优质债权,投资期限灵活,100元起投,收益稳健">
+
+		<meta name="keywords" content="欣冠,信贷网,稳定投资,稳健理财产品,投资理财,投资项目,P2P理财,互联网金融,短期理财">
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+
+		<base href="/">
+
+		<link rel="icon" href="mobile/resource/images/favicon.ico?v=2" mce_href="mobile/resource/images/favicon.ico" type="image/x-icon">
+		
+		<!--自定义-->
+		<link href="mobile/resource/css/style.css?version=1.0" rel="stylesheet">
+		<link rel="stylesheet" href="mobile/resource/css/index.css" type="text/css">
+		<link rel="stylesheet" href="mobile/resource/css/animate.css">
+		<!--  5.11 -->
+		<link rel="stylesheet" href="mobile/resource/css/W-css.css">	
+		<!--  5.11 -->
+		<script src="mobile/resource/js/jquery.2.0.0.min.js"></script>
+		<script src="mobile/resource/js/flexible.js"></script>
+		<script src="mobile/resource/js/qrcode.min.js"></script>
+		<script src="mobile/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="mobile/resource/js/wow.min.js" type="text/javascript"></script>
+		<!--swiper-->
+		<link href="mobile/resource/css/swiper.min.css" rel="stylesheet">
+		<script src="mobile/resource/js/swiper.js" type="text/javascript"></script>
+       <!--layer弹窗-->
+		<script src="mobile/resource/js/layer/layer.js" type="text/javascript"></script>
+	</head>
+
+	<body style="max-width: 10rem;margin: 0px auto;">
+		<div ng-view ng-class="{all_myView:night}">
+
+		</div>
+
+		<script src="mobile/bower_components/angular/angular.min.js"></script>
+
+		<script src="mobile/bower_components/angular-route/angular-route.js"></script>
+
+		<script src="mobile/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+
+		<!--angular-material-->
+
+		<script src="mobile/bower_components/angular-material/angular-material.min.js"></script>
+
+		<link href="mobile/bower_components/angular-material/angular-material.min.css" rel="stylesheet">
+
+		<!--这个是弹框样式修改-->
+
+		<style type="text/css">
+			md-dialog {
+    opacity: 0;
+    min-width: 6rem;
+    min-height: 2.5rem;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+    overflow: auto;
+  border-radius:0.09375rem !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+			md-dialog .md-dialog-content {
+				padding: 0
+			}
+			
+			md-dialog md-dialog-content:not([layout=row])> :first-child:not(.md-subheader) {
+				margin-top: 0;
+				border-bottom: 0.03125rem #ececec solid;
+				padding: 0.1875rem 0.25rem;
+				color: #000;
+				background-color: transparent;
+			}
+			md-dialog md-dialog-content .md-dialog-content-body{
+				padding: 0.25rem 0;
+				min-height: 1rem;
+			}
+			md-dialog md-dialog-content .md-dialog-content-body p{
+				padding-left: 0.25rem;
+				font-size: 16px;
+			}
+				[data-dpr="2"] md-dialog md-dialog-content .md-dialog-content-body p{
+		font-size: 32px;
+	}
+	
+	[data-dpr="3"] md-dialog md-dialog-content .md-dialog-content-body p{
+		font-size: 48px;
+	}
+			.md-title {
+				background: #fff;
+				font-size: 20px;
+			}
+			[data-dpr="2"] .md-title{
+		font-size: 40px;
+	}
+	
+	[data-dpr="3"] .md-title{
+		font-size: 60px;
+	}
+	md-dialog .md-actions .md-button, md-dialog md-dialog-actions .md-button {
+    margin: 0px;
+}
+
+
+	md-dialog .md-actions .md-button, md-dialog md-dialog-actions .md-button{
+		border-radius:0.09375rem;
+    margin: 0.25rem 0.125rem;
+    padding: 0px;
+    background: #DF0909;
+    color: #fff;
+    min-height: 0.75rem;
+    line-height: 0.75rem;
+    min-width:1.375rem;
+    transition: box-shadow 2.4s cubic-bezier(.25,.8,.25,1),background-color 2.4s cubic-bezier(.25,.8,.25,1);
+}
+
+	[data-dpr="2"] .md-button{
+		font-size: 28px;
+	}
+	
+	[data-dpr="3"] .md-button{
+		font-size: 42px;
+	}
+a.md-button.md-default-theme.md-primary, a.md-button.md-primary, .md-button.md-default-theme.md-primary, .md-button.md-primary {
+    background: #DF0909;
+    color: #fff;
+}
+md-dialog .md-actions, md-dialog md-dialog-actions{
+	-webkit-justify-content: center;
+    -ms-flex-pack: end;
+    justify-content: center;
+    padding: 0;
+}
+a.md-button.md-default-theme:not([disabled]):hover, a.md-button:not([disabled]):hover, .md-button.md-default-theme:not([disabled]):hover, .md-button:not([disabled]):hover {
+    background: #DF0909;
+    color: #fff;
+}
+a.md-button.md-default-theme:([disabled]), a.md-button:([disabled]), .md-button.md-default-theme:([disabled]), .md-button:([disabled]) {
+    background: #DF0909;
+    color: #fff;
+}
+md-dialog-actions button[disabled] {
+	background: #DF0909;
+    color: #fff;
+}
+		</style>
+
+		<!--angular-animate-->
+
+		<script src="mobile/bower_components/angular-animate/angular-animate.min.js"></script>
+
+
+		<!--angular-aria-->
+
+		<script src="mobile/bower_components/angular-aria/angular-aria.min.js"></script>
+
+		
+
+		<script src="mobile/bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+		<script src="mobile/bower_components/ng-infinite-scroll/build/ng-infinite-scroll.js"></script>
+
+		<script src="app.js?version=5.0"></script>
+
+		<script src="mobile/templates/filter/filter.js"></script>
+		<script src="mobile/resource/js/radialIndicator.js"></script>
+		<script src="mobile/resource/js/angular.radialIndicator.js"></script>
+		<script src='mobile/resource/js/jquery.lazyload.js' ></script>
+		<!--<script src="mobile/resource/js/echarts.min.js"></script>-->
+		<script src="mobile/templates/index/index.js?version=1.0"></script>
+		<script src="mobile/templates/index/investment.js"></script>
+		<script src="mobile/templates/index/planList.js"></script>
+		<script src="mobile/templates/index/join.js"></script>
+		<script src="mobile/templates/index/inputmobile.js"></script>
+		<script src="mobile/templates/index/register.js"></script>
+		<script src="mobile/templates/index/login.js"></script>
+		<script src="mobile/templates/index/loanAgreement.js"></script>
+		<script src="mobile/templates/index/findPassword.js"></script>
+		<script src="mobile/templates/index/activityCenter.js"></script>
+		<script src="mobile/templates/layout/layout.js"></script>
+		<script src="mobile/templates/index/shareRegister.js"></script>
+		<script src="mobile/templates/index/guaranteeInfo.js"></script>
+		<script src="mobile/templates/about/planDescription.js"></script>
+
+		<script src="mobile/templates/about/aboutUs.js"></script>
+		<script src="mobile/templates/about/noticesList.js"></script>
+		<script src="mobile/templates/about/newsList.js"></script>
+		<script src="mobile/templates/about/faqList.js"></script>
+		<script src="mobile/templates/about/about.js"></script>
+		<script src="mobile/templates/about/newAbout.js"></script>
+		<script src="mobile/templates/about/noviceExpress.js"></script>
+		<script src="mobile/templates/about/aptitude.js"></script>
+		<script src="mobile/templates/about/safeEnsure.js"></script>
+		<script src="mobile/templates/about/planDescription.js"></script>
+		<script src="mobile/templates/user/user.js"></script>
+		<script src="mobile/templates/user/InvestmentRecords.js"></script>
+		<script src="mobile/templates/user/fundDetails.js"></script>
+		<script src="mobile/templates/user/paymentPlans.js"></script>
+		<script src="mobile/templates/user/userWithdraw.js"></script>
+		 <script src="mobile/templates/user/userRecharge.js"></script>
+		<script src="mobile/templates/user/userSafeCenter.js"></script>
+		<script src="mobile/templates/user/news.js"></script>
+		<script src="mobile/templates/user/notices.js"></script>
+		<!--<script src="mobile/templates/user/userOnlineBank.js"></script>-->
+		<script src="mobile/templates/user/redPackage.js"></script>
+		<script src="mobile/templates/user/rateCoupon.js"></script>
+		<script src="mobile/templates/user/userInvite.js"></script>
+		<script src="mobile/templates/activities/onlineMarking.js"></script>
+		<script src="mobile/templates/activities/newGuestWelfare.js"></script>
+		<script src="mobile/templates/activities/bidBanner.js"></script>
+		<script src="mobile/templates/activities/continueVote.js"></script>
+
+        <script src="mobile/templates/static/redPacketRule.js"></script>
+         <script src="mobile/templates/static/withdrawRule.js"></script>
+        
+         <script src="mobile/templates/static/registration.js"></script>
+         <script src="mobile/templates/static/newRegistration.js"></script>
+         <script src="mobile/templates/static/notFound.js"></script>
+         <script src="mobile/templates/activities/invitFriend.js?v=2"></script>
+         <script src="mobile/templates/activities/newActive.js"></script>
+         <script src="mobile/templates/appDownload/appDownload.js"></script>
+
+         <script src="mobile/templates/activities/newYearActivity.js"></script>
+         <script src="mobile/templates/index/projectDetail.js"></script>
+         <script src="mobile/templates/about/planDescription.js"></script>
+         <!--活动页-->
+         <script src="mobile/templates/registerActive/registerActive1.js"></script>
+          <script src="mobile/templates/registerActive/Novicewelfare.js"></script>
+		 <script src="mobile/templates/registerActive/xgftJuly.js"></script>
+		 <script src="mobile/templates/activities/doubleSummer.js"></script>
+		<script src="mobile/templates/activities/DragonBoatJie.js"></script>
+		<script src="mobile/templates/registerActive/JulySummer.js"></script>
+		<script src="mobile/templates/registerActive/JulyDouble.js"></script>
+		<script src="mobile/templates/registerActive/mingJuly.js"></script>
+		<script src="mobile/templates/registerActive/AugustActive.js"></script>
+		<script src="mobile/templates/registerActive/ReCast.js"></script>
+		<script src="mobile/templates/registerActive/ActiveFirst.js"></script>
+		<script src="mobile/templates/registerActive/ActiveSecond.js"></script>
+		<script src="mobile/templates/registerActive/ActiveThree.js"></script>
+		<script src="mobile/templates/registerActive/National.js"></script>
+		<!--支付协议-->
+		<script src="mobile/templates/static/payment.js"></script>
+
+		<!--厦门泰千利-->
+		<script src="mobile/templates/about/tqabout.js"></script>
+		<script src="mobile/templates/activities/tqonlineMarking.js"></script>
+		<script src="mobile/templates/user/tqnotices.js"></script>
+		<script src="mobile/templates/activities/tqnewGuestWelfare.js"></script>
+		<script src="mobile/templates/activities/tqcontinueVote.js"></script>
+		<script src="mobile/templates/static/tqredPacketRule.js"></script>
+		<script src="mobile/templates/static/tqwithdrawRule.js"></script>
+		<script src="mobile/templates/activities/tqinvitFriend.js"></script>
+		<script src="mobile/templates/about/tqplanDescription.js"></script>
+		<script src="mobile/templates/about/tqnoviceExpress.js"></script>
+		<script src="mobile/templates/static/tqregistration.js"></script>
+		<script src="mobile/templates/activities/tqDragonBoatJie.js"></script>
+			<script src="mobile/templates/registerActive/tqActiveThree.js"></script>
+		<script src="mobile/templates/registerActive/tqActiveSecond.js"></script>
+		<script src="mobile/templates/registerActive/tqActiveFirst.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ body,html {
+        font-family: "Microsoft YaHei", "微软雅黑" !important;
+        width: 100% !important;
+        height: 100%;
+        background: #F5F5F5 !important;
+    }
+   
+body {
+    font-size: 12px;
+    -webkit-text-size-adjust: 100%;
+    color: #000;
+}
+
+
+article, aside, footer, header, nav, section, figure, figcaption, form {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+i {
+    font-style: normal
+}
+
+img {
+    vertical-align: top;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	width: 100%;
+ 	border: none;
+ 	height: auto;
+ 	display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+input {
+    outline: none;
+    background: transparent;
+    
+}
+
+ input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: #cecece;
+    }
+
+ input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: #cecece;
+    }
+ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    /*-webkit-box-shadow: 0 0 0px 1000px transparent inset !important;*/
+}
+i {
+    font-stretch: normal;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.fr1 {
+    float: left;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+ul, ol {
+   margin: 0px;
+   padding: 0px;
+}
+/*bootcss*/
+a {
+    color: #666666;
+    text-decoration: none !important;
+}
+.fontSize20{
+	font-size: 20px;
+}
+[data-dpr="2"] .fontSize20 {
+ 	font-size: 40px;
+ }
+ 
+[data-dpr="3"] .fontSize20 {
+ 	font-size: 60px;
+ }
+.fontSize12{
+	font-size: 12px;
+}
+[data-dpr="2"] .fontSize12 {
+ 	font-size: 24px;
+ }
+ 
+[data-dpr="3"] .fontSize12 {
+ 	font-size: 36px;
+ }
+ 
+.fontSize14{
+	font-size: 14px;
+}
+[data-dpr="2"] .fontSize14 {
+ 	font-size: 28px;
+ }
+ 
+[data-dpr="3"] .fontSize14 {
+ 	font-size: 42px;
+ }
+ 
+.fontSize16{
+	font-size: 16px;
+}
+[data-dpr="2"] .fontSize16 {
+ 	font-size: 32px;
+ }
+ 
+[data-dpr="3"] .fontSize16 {
+ 	font-size: 48px;
+ }
+ 
+.fontSize18{
+	font-size: 18px;
+}
+[data-dpr="2"] .fontSize18 {
+ 	font-size: 36px;
+ }
+ 
+[data-dpr="3"] .fontSize18 {
+ 	font-size: 54px;
+ }

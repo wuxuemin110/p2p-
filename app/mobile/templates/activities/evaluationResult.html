@@ -1,0 +1,87 @@
+<head>
+
+		<title>评测结果</title>
+</head>
+<style>
+	body {
+		font-family: "Microsoft YaHei", "微软雅黑" !important;
+	
+	}
+
+    .evaluationResult{
+    	width: 100%;
+    	margin: 0px auto;
+    	padding: 0.8125rem 0 0.8125rem 0;
+    	/*height: 740px;
+    	margin-bottom: 100px;*/
+    	background: #fff;
+    	overflow: hidden;
+    }
+    .evaluationResultImg{
+    	margin: 0px auto;
+    	width: 3.28175rem;
+    	height: 3.28175rem;
+    }
+    .evaluationResultImg img{
+    	vertical-align: top;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		border: none;
+		height: auto;
+		display: block;
+    }
+    .evaluationResultText{
+    	text-align: center;
+    	margin: 0.5rem 0 1rem 0;
+    	height: 0.75rem;
+    	line-height: 0.75rem;
+    	font-size: 20px;
+    	color: #343434;
+    }
+    [data-dpr="2"]  .evaluationResultText{
+		font-size: 40px;
+	}
+	
+	[data-dpr="3"]  .evaluationResultText {
+		font-size: 60px;
+	}
+    .evaluationResultBtn{
+    display: block;
+    width: 8.9375rem;
+	height: 1.125rem;
+	line-height: 1.125rem;
+	font-size: 16px;
+	border-radius: 0.0625rem;
+	background-color: #DF0707;
+    margin:1rem auto 1rem auto;
+    color: #fff;
+    border:none;
+    outline: none;
+    text-align: center;
+
+}
+.evaluationResultBtn a{
+    display: block;
+    width: 8.9375rem;
+	height: 1.125rem;
+	line-height: 1.125rem;
+    color: #fff;
+    cursor: pointer;
+
+}
+</style>
+<div class="questionnaireBanner">
+	
+</div>
+<div class="evaluationResult">
+	 <div class="evaluationResultImg">
+	 	<img src="mobile/resource/images/activity_new/evaluationResult.png">
+	 </div>
+	 <div class="evaluationResultText">
+	 	您的测评结果为"{{text}}"
+	 </div>
+	 <div class="evaluationResultBtn">
+	 	<a href="#" ng-click="gotoInvestFragment()">立即投资</a>
+	 </div>
+</div>

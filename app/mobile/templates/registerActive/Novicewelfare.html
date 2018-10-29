@@ -1,0 +1,458 @@
+<head>
+    <title>新手福利活动</title>
+</head>
+<style>
+body {
+	background-color: #fff;
+    font-family: "Microsoft YaHei", "微软雅黑" !important;
+}
+
+.onlineMarking {
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+}
+
+.onlineMarking img {
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border: none;
+    height: auto;
+    display: block;
+    margin: -1px 0;
+}
+
+.onlineMarkingBtn img {
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border: none;
+    height: auto;
+    display: block;
+}
+
+.position {
+    position: relative;
+}
+
+.position .btn {
+    position: absolute;
+    display: block;
+    width: 2.13rem;
+    right: 0.96rem;
+    bottom: 0.54rem;
+}
+
+.position .btn2 {
+    position: absolute;
+    display: block;
+    width: 2.13rem;
+    right: 0.82rem;
+    bottom: 0.46rem;
+}
+
+.fixdBox {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.fixBoxchild {
+    position: absolute;
+    width: 8.13rem;
+    border: 0.12rem solid #ffe4e7;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.26rem;
+}
+
+.childBox {
+	margin: 0.093rem;
+    border:0.013rem  dashed #f27283;
+    border-radius: 0.26rem;
+}
+.childBox h1{
+	font-size: 0.56rem;
+	text-align: center;
+	line-height: 1.5rem;
+	color: #ff4e62;
+}
+.childBox p{
+	font-size: 0.37rem;
+	color: #ffaeb7;
+	line-height: 0.66rem;
+	margin-bottom: 0.13rem;
+	text-align: justify;
+
+
+}
+.childdsp{
+	padding: 0.26rem;
+}
+.childBox h1{
+	position: relative;
+}
+.childBox h1 img{
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	right: 0.29rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.inputGroup {
+		width:100%;
+		margin: 0px auto;
+		overflow: hidden;
+		background-color: #fff;
+		border-radius: 0.5rem;
+		margin-bottom: 0.26rem;
+	}
+	.shareRegisterPhone,.shareRegisterVerifyCode,.shareRegisterPhoneCode,.shareRegisterRecommendCode,.shareRegisterPassword{
+		float: left;
+		
+		height: 1rem;
+		width: 1rem;
+	}
+	.shareRegisterPhone{
+		
+		background: url(mobile/resource/images/login/name.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.shareRegisterVerifyCode{
+		background: url(mobile/resource/images/login/number.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.shareRegisterPhoneCode{
+		background: url(mobile/resource/images/login/code.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.shareRegisterRecommendCode{
+		background: url(mobile/resource/images/login/phone.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.shareRegisterPassword{
+		background: url(mobile/resource/images/login/psd.png) center center no-repeat;
+		background-size: 0.53333rem 0.53333rem;
+	}
+	.inputName,.inputPassword,.verifyCode,.phoneCodeBg{
+		float: right;
+		
+		height: 1rem;
+		
+		width: 6.4rem;
+		
+		position: relative;
+	}
+	.inputName input,
+	.inputPassword input {
+		background:transparent;
+		/*padding: 0.25rem 0;*/
+		height: 1rem;
+		border: 0px;
+		width: 100%;
+		/*font-weight: 500;*/
+		font-size: 14px;
+		color: #a7a5a5;
+	}
+	.verifyCode input,.phoneCode input{
+		width: 4rem;
+		height: 1rem;
+		border: 0px;
+		font-size: 14px;
+		color: #a7a5a5;
+		/*padding: 0.25rem 0;*/
+	}
+	[data-dpr="2"] .inputName input,[data-dpr="2"] .inputPassword input,[data-dpr="2"] .verifyCode input,[data-dpr="2"] .phoneCode input ,[data-dpr="2"] .verifySms{
+		font-size: 28px;
+	}
+	
+	[data-dpr="3"] .inputName input,[data-dpr="3"] .inputPassword input,[data-dpr="3"] .verifyCode input,[data-dpr="3"] .phoneCode input ,[data-dpr="3"] .verifySms{
+		font-size: 42px;
+	}
+.verifySms {
+		position: absolute;
+		top: 0.08rem;
+		right: 0.4rem;
+		width: 2.53125rem;
+		height: 0.859375rem;
+		line-height: 0.859375rem;
+		/*border: 1px solid #ff4773;*/
+		border-radius: 0.09375rem;
+		font-size: 14px;
+		color: #ff4773;
+	}
+	
+	.verifySms span {
+		width: 100%;
+		height: 0.859375rem;
+		line-height: 0.859375rem;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
+		font-weight: bold;
+	}
+	
+	.verifyImg {
+		position: absolute;
+		top: 0.095rem;
+		right: 0.4rem;
+		width: 2.03125rem;
+		height: 0.8375rem;
+		background: #fff;
+	}
+	
+	.verifyImg img {
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+	}
+	.loginBtn {
+		width: 7.0666rem;
+		text-align: center;
+		margin:0px auto ;
+		
+		font-size: 16px;
+	}
+	
+	.loginBtn .spanBlock {
+		background: #fff;
+		border-radius: 0.6rem;
+		width: 90%;
+		margin: 0 auto;
+		height: 1.066rem;
+		line-height: 1.066rem;
+		text-align: center;
+		position: relative;
+		color: #ff4773;
+		display: inline-block;
+		/* box-shadow: 0px 10px 20px rgba(222, 82, 47, 0.8); */
+	}
+	.loginBtn .spanBlock img{
+		position: absolute;
+		top: 0.62rem;
+		left: 0.16rem;
+		width: 0.64rem;
+		height: 0.333rem;
+	}
+	.nowBlock{
+		margin-top: 0.5333rem;
+		background: #de522f;
+		border-radius: 0.6rem;
+		width: 100%;
+		height: 1.066rem;
+		line-height: 1.066rem;
+		text-align: center;
+		
+		color: #fff;
+		display: inline-block;
+		box-shadow: 0px 0px 10px rgba(222, 82, 47, 0.8);
+	}
+	.loginBtn .spanNone {
+		background: #ccc;
+		border-radius: 0.6rem;
+		width: 100%;
+		height: 1.066rem;
+		line-height: 1.066rem;
+		text-align: center;
+		color: #999;
+		display: none;
+	}
+	[data-dpr="2"] .loginBtn{
+		font-size: 32px;
+	}
+	
+	[data-dpr="3"] .loginBtn{
+		font-size: 48px;
+	}
+	
+	[data-dpr="2"] .check-text{
+		font-size: 30px;
+	}
+	[data-dpr="3"] .check-text{
+		font-size: 50px;
+	}
+	input:-webkit-autofill,
+	textarea:-webkit-autofill,
+	select:-webkit-autofill {
+		-webkit-text-fill-color: #ededed !important;
+		-webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+		background-color: transparent;
+		background-image: none;
+		transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间  
+	}
+	.check-text{
+		text-align: center;
+		font-size: 24px;
+		color: #fe6301;
+		margin-top: 0.4rem;
+	}
+	.check-text .check-text-bg{
+		display: inline-block;
+		width: 0.453125rem;
+		height: 0.453125rem;
+		vertical-align: middle;
+		background-image: url(iphone/resource/images/login/check-text-bg.png);
+		background-size: 0.453125rem 0.453125rem;
+	}
+
+	.loginTip{
+		font-size:16px;
+		margin: 0.33rem 0;
+		text-align: center;
+		/*background-color: rgb(232,31,22);*/
+		padding-bottom: 13px;
+		color: #fff;
+	}
+	.loginTip a{
+		color: #fbd9b4;
+	}
+	[data-dpr="2"] .loginTip{
+		font-size:32px;
+	}
+	[data-dpr="3"] .loginTip{
+		font-size:48px;
+	}
+	
+	.TIPS{
+		color: #cfc5b3;
+		font-size: 12px;
+		text-align: center;
+		background-color: #550a73;
+		padding: 20px 0;
+	}
+	[data-dpr="2"] .TIPS{
+		font-size:24px;
+	}
+	[data-dpr="3"] .TIPS{
+		font-size:36px;
+	}
+.check-inner  {
+
+		margin: 0.25rem 0rem 0.625rem 0px;
+		/*color: #333;*/
+		
+	}
+	.check-inner  a{
+		color: #fbd9b4;
+	}
+	.z_register{
+	width: 100%;
+	position: relative;
+}
+.login-inner-tab{
+	position: absolute;
+	bottom:1.6rem;
+	left: 1.3rem;
+	/*left: 50%;
+	transform: translateX(-50%);*/
+}
+.check-inner .z_gou{
+	width: 0.35rem;
+	display: inline-block;
+}
+</style>
+<div class="onlineMarking">
+    <img class="lazy" data-original="mobile/resource/images/registerActive/xsfl.jpg" alt="">
+    <img class="lazy" data-original="mobile/resource/images/registerActive/fuli2.jpg" alt="">
+    <img class="lazy" data-original="mobile/resource/images/registerActive/fuli3.jpg" alt="">
+    <div class="z_register">
+    	<img style="height: 16rem;" class="lazy" data-original="mobile/resource/images/registerActive/fuli4.jpg" alt="">
+    	<div style="display: block;" class="login-inner-tab">
+				<div class="inputGroup">
+                    <div class="shareRegisterPhone"></div>
+					<div class="inputName" data-rel="r_phone" data-container="body" data-toggle="popover" data-content="手机号码不能为空">
+						<input ng-model="registerInfo.userInfo.phone" type="text" placeholder="请输入手机号码" autocomplete="new-password" name="phone">
+					</div>
+				</div>
+				<div class="inputGroup">
+					<div class="shareRegisterVerifyCode"></div>
+					<div class="verifyCode" data-rel="l_verifyCode" data-container="body" data-toggle="popover" data-content="验证码不能为空">
+						<input name="l_verifyCode" type="text" ng-model="imgCode" placeholder="请输入图片验证码" autocomplete="new-password">
+						<div class="verifyImg">
+							<img id="verificationCode" src="" ng-click="changeVerificationCode()">
+						</div>
+					</div>
+				</div>
+				<div class="inputGroup ">
+					<div class="shareRegisterPhoneCode"></div>
+					<div class="phoneCodeBg" data-rel="r_verifyCode" data-container="body" data-toggle="popover" data-content="验证码不能为空">
+						<div class="phoneCode"><input ng-model="registerInfo.code" type="text" name="code" autocomplete="new-password" required="" placeholder="获取手机验证码"></div>
+
+						<div class="verifySms">
+							<span ng-click="sendSms()">获取验证码</span>
+						</div>
+					</div>
+				</div>
+				<div class="inputGroup">
+					<div class="shareRegisterPassword"></div>
+					<div class="inputPassword" data-rel="l_password" data-container="body" data-toggle="popover" data-content="密码不能为空">
+						<input type="password" name="password" value="" style="display:none;" autocomplete="off" />
+						<input ng-model="registerInfo.user.password" type="password" required="" placeholder="请设置登录密码" autocomplete="new-password" name="password">
+					</div>
+				</div>
+
+				<div class="inputGroup">
+					<div class="shareRegisterRecommendCode"></div>
+					<div class="inputPassword" data-rel="r_recommendId" data-container="body" data-toggle="popover" data-content="">
+						<input ng-model="registerInfo.userInfo.recommendCode" type="text" placeholder="请输入邀请人手机号（选填）">
+					</div>
+				</div>
+				<div class="check-inner">
+					<!--<label data-rel="r_checkRead" data-container="body" data-toggle="po<!--pover" data-content="您必须同意注册协议"><input checked="checked" ng-click="checkbox($event)" name="checkRead" type="checkbox">&nbsp;&nbsp;已阅读并同意<a-->
+                        <!--href="/mobile/registration" >《毕投在线注册协议》</a></label>-->
+                        <div>
+                        	<img class="z_gou" src="mobile/resource/images/registerActive/gou.png"/>
+                        	&nbsp;&nbsp;已阅读并同意<a
+                        href="/mobile/registration" >《欣冠在线注册协议》</a></div>
+				</div>
+				<div class="loginBtn">
+					<div style="cursor: pointer;" ng-click="register()" class="spanBlock">
+					注册立享好礼
+					<img src="mobile/resource/images/login/SmallN.png" />
+					</div>
+					<div style="cursor: pointer;" class="spanNone">注册立享好礼</div>
+					<!-- <a style="cursor: pointer;" class=" nowBlock" href="http://sj.qq.com/myapp/detail.htm?apkName=com.jinyoujf" >已注册用户下载APP</a> -->
+					
+				</div>
+				<p class="loginTip" ><a href="/mobile/login">已注册</a> 丨 <a href="/mobile/login">立即登录</a></p>
+				<!-- <div class="check-text">
+					<i class="check-text-bg"></i>
+					注册即同意本服务条款及<a href="/mobile/registration">用户协议</a>
+				</div> -->
+
+			</div>
+    </div>
+    
+   <!-- <img class="lazy" data-original="mobile/resource/images/registerActive/registerActive2_05.jpg" alt="">-->
+    <!--<img class="lazy" data-original="mobile/resource/images/registerActive/F1_06.jpg" alt="">-->
+</div>
+
+
+
+<!--<script src='mobile/resource/js/jquery.lazyload.js' ></script>-->
+<script>
+
+  $(function() {
+
+      $("img.lazy").lazyload({
+      	effect: "fadeIn",
+      	threshold :180
+
+      });
+
+  });
+</script>

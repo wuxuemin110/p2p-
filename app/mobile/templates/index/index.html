@@ -1,0 +1,213 @@
+<!--样式-->
+<title>欣冠_欣冠官网_专业的互联网金融平台_稳健投资理财的首选！首页</title>
+<script src="mobile/resource/js/jquery.easing.1.3.js"></script>
+<style>
+.animate-positive {
+    animation: animate-positive 2s;
+    transition: width 1s linear 0s;
+    -webkit-transition: width .6s ease;
+    transition: width 0.6s ease;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+</style>
+<div ng-cloak>
+    <!--轮播-->
+    <div class="new_banner">
+        <div class="main_visual">
+            <div class="flicking_con" id="sdt_menu">
+                <a ng-repeat="x in IndexImag">
+
+				</a>
+            </div>
+            <div class="main_image">
+                <ul class="slides_container" style="overflow: hidden; position: relative;">
+                    <li ng-repeat="x in IndexImag" on-finish-render-filters2>
+                        <a href="{{x.url}}" style="width:100%;" ng-if="x.outSite==true" target="_blank">
+							<img ng-src="{{x.picture}}">
+						</a>
+                        <a href="{{x.url}}" style="width:100%;" ng-if="x.outSite==false">
+							<img ng-src="{{x.picture}}">
+						</a>
+                    </li>
+                </ul>
+                <a href="javascript:;" id="btn_prev"></a>
+                <a href="javascript:;" id="btn_next"></a>
+            </div>
+
+
+            <!--公告列表-->
+            <div class="noticeBg fontSize12">
+                <i class="bgIcon"></i>
+                <span class="more">
+                    <b></b>
+                    <a href="/mobile/noticesList" target="_blank" >更多</a>
+                </span>
+                <div id="demo" class="demoClass">
+                    <ul class="mingdan" id="holder">
+                        <li ng-repeat="x in noticeList">
+                            <a class="notice-li" href="/mobile/notices/{{x.id}}">{{x.title}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+        <div id="addNewYear" class="">
+            <div id="main">
+
+                <div class="noticelist">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="/mobile/safeEnsure">
+							<img src="mobile/resource/images/index/notice1.jpg" alt="">
+							<p>安全保障</p>
+							</a>
+                        </li>
+                        <li>
+                            <a href="/mobile/newGuestWelfare">
+							<img src="mobile/resource/images/index/notice2.jpg" alt="">
+							<p>新手礼包</p>
+							</a>
+                        </li>
+                        <li>
+                            <a href="/mobile/continueVote">
+							<img src="mobile/resource/images/index/notice3.jpg" alt="">
+							<p>续投福利</p>
+							</a>
+                        </li>
+                        <li>
+                            <a href="/mobile/onlineMarking">
+							<img src="mobile/resource/images/index/notice4.jpg" alt="">
+							<p>私人定制</p>
+							</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bgLine"></div>
+                <!-- 新手标 -->
+                <div class="newUserBox">
+                    <div class="percentBox clearfix">
+                        <p class="percentText fl">新标体验</p>
+
+                    </div>
+                    <div class="tateBox">
+                        <img class="pictText" src="mobile/resource/images/index/pictText.jpg" alt="">
+                        <div class="tateNumber">{{plans[0].rate/10 | currency:"":2}} <b>%</b> </div>
+
+                        <div class="tateDsp">
+                            <p>{{plans[0].staging}}天</p>
+                            <p>{{plans[0].minAmount | PointToYuan | currency:"":0}}元起投</p>
+                            <p>剩余可投 {{((plans[0].amount/100)-(plans[0].nowSum/100))/10000 | currency:"":2}} 万元</p>
+                        </div>
+                        <a class="tateNow" href="/mobile/join/{{plans[0].id}}">立即投资</a>
+                    </div>
+                </div>
+                <div class="bgLine"></div>
+                <div class="idxtitle">
+                    理财精选
+                </div>
+                <div class="choicelist">
+                    <ul>
+                        <li ng-repeat='item in bottomPlans1' ng-if='$index<3'>
+                            <a href="/mobile/join/{{item.id}}">
+                                <div class="choicetext clearfix">
+                                    <p class="choiceName">{{item.name}}</p>
+
+                                </div>
+                                <div class="choiceDsp clearfix">
+                                    <div class="choiceLeft fl">
+                                        <div class="choiceRate">
+                                            <span class="choiceRatePer">
+                                            {{item.rate/10}}%
+                                            	 <p class="choiceAdd" ng-show='item.rasingRate>0'>+{{item.rasingRate/10}}%</p>
+                                            </span>
+                                           
+                                        </div>
+                                        <p class="choiceText">预期年化收益率</p>
+                                    </div>
+                                    <div class="choiceRight fr">
+                                        <div class="choiceNumer clearfix">
+                                            <div class="choiceBar fl">
+                                                <div class="choiceRed  animate-positive WOW" style="width:{{((item['nowSum'] / item['amount']) * 100)>100 ? 100:(item['nowSum'] / item['amount']*100) | parseInt}}%;"></div>
+                                            </div>
+                                            <div class="choicePer fr">{{((item['nowSum'] / item['amount']) * 100)>100 ? 100:(item['nowSum'] / item['amount']*100) | parseInt}}%</div>
+                                        </div>
+                                        <div class="choiceTerm clearfix">
+                                            <p class="TermText fl">投资期限:
+
+                                                <span class="TermNumber" ng-show='item.stagingUnit=="day"'>{{item.staging}}天</span>
+                                                <span class="TermNumber" ng-show='item.stagingUnit=="month"'>{{item.staging}}个月</span>
+                                            </p>
+                                            <p class="residue">剩余:{{item.amount/100-item.nowSum/100 | parseInt}}元</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                     
+                    </ul>
+                </div>
+
+                <div class="bgLine"></div>
+                <div class="idxtitle">
+                    精彩阅读
+                </div>
+                <div class="rading">
+                    <div class="newHandPic">
+                        <a href="/mobile/noviceExpress"><img src="mobile/resource/images/index/index1.jpg" alt=""></a>
+                    </div>
+                    <div class="activePic">
+                        <a href="/mobile/activityCenter"><img src="mobile/resource/images/index/index2.jpg" alt=""></a>
+                    </div>
+                    <div class="aboutPic">
+                        <a href="/mobile/about"><img src="mobile/resource/images/index/index3.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="Media">
+                    <a href="/mobile/newsList"><img src="mobile/resource/images/index/Media.jpg" alt=""></a>
+
+                    <p class="bottomTip">市场有风险 投资需谨慎</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--公司动态-->
+    <!--尾部-->
+    <div>
+        <div ng-include="'mobile/templates/layout/bottom.html'"></div>
+    </div>
+    <script>
+    //公告滚动
+    function AutoScroll(obj) {
+        $(obj).find("ul:first").animate({
+                marginTop: "-0.90625rem"
+            },
+            1000,
+            function() {
+                $(this).css({
+                    marginTop: "0px"
+                }).find("li:first").appendTo(this);
+            });
+    }
+    $(document).ready(function() {
+        setInterval('AutoScroll("#demo")', 3000)
+    });
+    </script>
+    <script type="text/javascript" src="mobile/resource/js/jquery.event.drag-1.5.min.js"></script>
+    <script type="text/javascript" src="mobile/resource/js/jquery.touchSlider.js"></script>

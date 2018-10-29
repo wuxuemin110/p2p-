@@ -1,0 +1,178 @@
+<head>
+
+	<title>投资有礼</title>
+</head>
+<style>
+	body {
+		font-family: "Microsoft YaHei", "微软雅黑" !important;
+		background: url("mobile/resource/images/about/investmentCourtesyBg.jpg") repeat-y center center !important;
+		background-size: 100% 0.03125rem;
+	}
+	
+	.investmentCourtesy {
+		padding: 0px;
+		width: 100%;
+		margin: 0px;
+		position: relative;
+	}
+	
+	.investmentCourtesy img {
+		vertical-align: top;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		border: none;
+		height: auto;
+		display: block;
+	}
+	
+	.investmentCourtesyTop {
+		width: 100%;
+		margin: 0px auto;
+		overflow: hidden;
+	}
+	
+	.investmentCourtesyTop ul {
+		width: 100%;
+		overflow: hidden;
+		background: #fff;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.investmentCourtesyTop ul li {
+		height: 1.0625rem;
+		line-height: 1.0625rem;
+		margin: 0px 0.84375rem;
+		padding: 0px;
+		float: left;
+		width: 1.640625rem;
+		color: #868693;
+		font-size: 14px;
+		/*font-weight: 600;*/
+		text-align: center;
+		border-bottom: 0.0625rem solid transparent;
+	}
+	
+	[data-dpr="2"] .investmentCourtesyTop ul li {
+		font-size: 28px;
+	}
+	
+	[data-dpr="3"] .investmentCourtesyTop ul li {
+		font-size: 42px;
+	}
+	
+	.investmentCourtesyTop .liIndex {
+		border-bottom: 0.0625rem solid #e20214;
+		color: #e20214;
+	}
+	
+	.investmentCourtesyBtn5 {
+		width: 100%;
+		height: 1.375rem;
+		background: url("mobile/resource/images/about/investmentCourtesy4.png") no-repeat center center;
+		background-size: 100% 1.375rem;
+	}
+	
+	.investmentCourtesyBtn {
+		width: 6.53125rem;
+		height: 1.21875rem;
+		line-height: 1.21875rem;
+		border-radius: 0.609375rem;
+		cursor: pointer;
+		color: #fcb602;
+		background: #fff;
+		display: block;
+		font-size: 18px;
+		text-align: center;
+		margin: 0px auto;
+	}
+	
+	[data-dpr="2"] .investmentCourtesyBtn {
+		font-size: 36px;
+	}
+	
+	[data-dpr="3"] .investmentCourtesyBtn {
+		font-size: 54px;
+	}
+	
+	.investmentCourtesyCon {
+		width: 100%;
+		overflow: hidden;
+		background: url("mobile/resource/images/about/investmentCourtesyCon.png") no-repeat center center;
+		background-size: 100% 13.625rem;
+		/*margin-top: 0.6rem;
+ 	margin-bottom: 0.52rem;*/
+	}
+	
+	.investmentCourtesyCon ul {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.investmentCourtesyCon li {
+		width: 100%;
+		margin: 0px 0px;
+		float: left;
+		cursor: pointer;
+		display: none;
+	}
+	
+	.investmentCourtesyCon li img {
+		vertical-align: top;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		border: none;
+		height: auto;
+		display: block;
+	}
+	
+	.investmentCourtesyCon .investmentCurrent {
+		display: block;
+	}
+</style>
+<div>
+<div class="investmentCourtesyTop">
+	<ul>
+		<li class="liIndex">
+			新客奖
+		</li>
+		<li>
+			首标奖
+		</li>
+		<li>
+			满标奖
+		</li>
+	</ul>
+
+</div>
+<div class="investmentCourtesyCon">
+	<ul>
+		<li class="investmentCurrent">
+			<img src="mobile/resource/images/about/investmentCourtesy1.png" />
+		</li>
+		<li>
+			<img src="mobile/resource/images/about/investmentCourtesy2.png" />
+		</li>
+		<li>
+			<img src="mobile/resource/images/about/investmentCourtesy3.png" />
+		</li>
+	</ul>
+</div>
+<!--按钮-->
+<div class="investmentCourtesyBtn5">
+	<div class="investmentCourtesyBtn" ng-click="gotoInvestFragment()">
+		立即投资
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$(".investmentCourtesyTop li").click(function() {
+			$(".investmentCourtesyCon li").eq($(this).index()).addClass("investmentCurrent").siblings().removeClass("investmentCurrent");
+			$(this).addClass("liIndex").siblings().removeClass("liIndex");
+		});
+	});
+</script>

@@ -1,0 +1,41 @@
+<title>
+	提现</title>
+<div  ng-cloak>
+    <div class="userWithdrawBg">
+    	  <div class="bankInfo">
+    	  	  <img ng-src="mobile/resource/images/user/{{userCard[0].bankCode}}.png">
+    	  	  <div class="bankInfoText">
+    	  	  	<span>储蓄卡</span><font>{{userCard[0].bankName}}</font>
+    	  	  	<br>{{userCard[0].cardNumber}}
+    	  	  </div>
+    	  </div>
+    	  <div class="bankMoney">
+    	  	  可提现金额：<span class="userAccountMoney" data="{{userAccount.money}}">{{userAccount.money | PointToYuan | currency:"":2}}</span>元
+    	  </div>
+    	  <div class="bankeDiv">
+    	  	<span><input type="text" name="amount" class="formControl" ng-model="tradeRecord.money" placeholder="最低提现金额100.00元" autocomplete="new-password"> 元</span>提现金额
+    	  </div>
+    	  <div class="bankeDiv">
+    	  	<span>{{withdrawCount.fee | PointToYuan | currency:"":2}} 元</span>手续费
+    	  </div>
+    	  <div class="bankeDiv">
+    	  	<span><font class="noControl" ng-show="tradeRecord.money<3||tradeRecord.money==undefined||withdrawfee==0">
+										0
+									</font>
+									<font class="noControl" ng-show="tradeRecord.money>2&&withdrawfee!=0">
+										{{ tradeRecord.money-withdrawCount.fee/100}}
+									</font> 元</span>实际到账
+    	  </div>
+    	  <div class="bankeDiv">
+    	  	<span><input type="password" name="password" class="formControl" placeholder="请输入支付密码" ng-model="tradeRecord.tradePassword" name="password" autocomplete="new-password"></span>交易密码
+    	  </div>
+    	  <div class="freeCount">每个月免费提现次数3次，本月剩余<span>{{withdrawCount.count}}</span>次</div>
+    	  <div class="withdrawBtn" ng-click="withdraw()">提现</div>
+    	  <div class="ruleCash">
+    	  	<a href="/mobile/withdrawRule"></a>
+    	  </div>
+    	  
+    </div>
+
+	
+</div>

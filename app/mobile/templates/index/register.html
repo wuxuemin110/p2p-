@@ -1,0 +1,181 @@
+<title>注册</title>
+<style>
+    body {
+        background: #fff !important;
+    }
+
+    .registerwarp {
+        width: 100%;
+        height: 100vh;
+        background-image: url("/mobile/resource/images/login/loginBg.jpg") !important;
+        background-size: cover !important;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+        position: relative;
+      }
+
+    .z_registerHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0.52rem auto 0.64rem;
+        /*color: #fff;*/
+    }
+
+    .z_registerHead span , .z_registerHead a{
+        color: #fff;
+        font-size: 0.35rem;
+    }
+
+    .z_nicetomeetyou {
+        color: #333;
+        font-size: 0.7rem;
+        font-weight: bold;
+        overflow: hidden;
+        padding-top: 2.46rem;
+    }
+    .z_nicetomeetyou span{
+        float: left;
+    }
+    .z_nicetomeetyou i{
+        float: left;
+        color: #ff3e45;
+    }
+    .z_registerClose{
+        width: 0.4rem;
+    }
+    .z_welcome{
+        color: #666;
+        font-size: 0.4rem;
+    }
+    .z_nicetomeetyou,.z_welcome{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 0.64rem;
+    }
+    .z_success{
+        width: 0.32rem;
+        display: inline-block;
+        margin-top:0.05rem;
+        margin-right: 0.1rem;
+    }
+    #z_code{
+        background: none;
+        border: none;
+        height: 1.35rem;
+        font-size: 0.37rem;
+    }
+    .inputGroup input::-webkit-input-placeholder{
+
+        font-weight: 100;
+    }
+    .registerwarp .check-inner label{
+        width: auto;
+        color: #212121;
+    }
+    .z_check-inner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .registerwarp .back{
+        position: absolute;
+        top: 0.26rem;
+        left: 0.4rem;
+    }
+    .back img{
+        width: 0.74rem;
+        display: block;
+    }
+    .registerwarp .loginBtn .spanBlock{
+        width: 100%;
+        margin: 0 auto;
+        background: #ff3e45;
+        color: #fff;
+        font-size: 0.45rem;
+        text-align: center;
+        height: 1.33rem;
+        line-height: 1.33rem;
+        border-radius: 0;
+    }
+    .loginBtn{
+        margin-top: 1rem !important;
+    }
+
+    .registerwarp .inputName input::-webkit-input-placeholder,
+    .registerwarp .inputPassword input::-webkit-input-placeholder {
+        color: none;
+    }
+</style>
+
+<div class="registerwarp">
+    <div class="loginBg">
+        <div class="login">
+            <div class="inputGroup">
+                <div class="back">
+                    <a href="/mobile/index">
+                        <img src="mobile/resource/images/login/BACK.jpg" class="z_registerClose"/>
+                    </a>
+
+                </div>
+            <div class="z_nicetomeetyou">
+                <span>嗨~很高兴遇到</span><i >你</i>
+            </div>
+            <div class="z_welcome">
+                欢迎注册欣冠理财
+            </div>
+        </div>
+            <div class="inputGroup">
+                <!--<div class="shareRegisterPhone"></div>-->
+                <div class="inputName" data-rel="r_phone" data-container="body" data-toggle="popover"
+                     data-content="手机号码不能为空">
+                    <input ng-model="registerInfo.userInfo.phone" type="text" placeholder="请输入手机号码"
+                           autocomplete="new-password" name="phone">
+                </div>
+            </div>
+            <div class="inputGroup ">
+                <!--<div class="shareRegisterPhoneCode"></div>-->
+                <div class="phoneCodeBg" data-rel="r_verifyCode" data-container="body" data-toggle="popover"
+                     data-content="验证码不能为空">
+                    <!--<div class="phoneCode">-->
+                        <input ng-model="registerInfo.code" type="text" name="code"
+                                                  autocomplete="new-password" required="" placeholder="获取手机验证码" id="z_code">
+                    <!--</div>-->
+                    <div class="verifySms">
+                        <span ng-click="sendSms()" ng-show="!DisableSendBtn">{{sendBtnText}}</span>
+                        <span ng-show="DisableSendBtn">{{sendBtnText}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="inputGroup">
+                <!--<div class="shareRegisterPassword"></div>-->
+                <div class="inputPassword" data-rel="l_password" data-container="body" data-toggle="popover"
+                     data-content="密码不能为空">
+                    <input type="password" name="password" value="" style="display:none;" autocomplete="off"/>
+                    <input ng-model="registerInfo.user.password" type="password" required="" placeholder="请设置登录密码"
+                           autocomplete="new-password" name="password">
+                </div>
+            </div>
+
+            <div class="inputGroup">
+                <!--<div class="shareRegisterRecommendCode"></div>-->
+                <div class="inputPassword" data-rel="r_recommendId" data-container="body" data-toggle="popover"
+                     data-content="">
+                    <input ng-model="registerInfo.userInfo.recommendCode" type="text" placeholder="请输入邀请人手机号">
+                </div>
+            </div>
+
+            <div class="loginBtn">
+                <div style="cursor: pointer;" ng-click="register()" class="spanBlock">注册领新人红包</div>
+                <div style="cursor: pointer;" class="spanNone">注册领新人红包</div>
+            </div>
+            <div class="check-inner z_check-inner" style="display: flex;">
+
+                <a href="/mobile/registration" data-rel="r_checkRead" data-container="body" data-toggle="popover"
+                       data-content="您必须同意注册协议" ><img src="mobile/resource/images/login/success@3x.png" class="z_success" alt="">注册即同意本服务条款及用户协议</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div ng-include="'mobile/templates/layout/bottom.html'"></div>-->

@@ -1,0 +1,212 @@
+<title>我的资产</title>
+<style type="text/css">
+.z_setimg {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.z_userTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.6rem;
+    box-sizing: border-box;
+}
+
+.z_userTop p {
+    line-height: 0.8rem;
+
+    font-size: 0.42rem;
+    color: rgba( 255, 255, 255, 0.902);
+}
+
+.z_userTop img {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+}
+
+.z_mymoney {
+
+    font-size: 1rem;
+
+    color: rgb( 255, 255, 255);
+    margin-top: 0.33rem;
+    
+    margin-left: 0.6rem;
+    
+    font-weight: normal;
+}
+
+.userPage .userFun li .userFundiv .z_userc {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    min-width: 3rem;
+    position: relative;
+}
+
+.userPage .userFun li .z_rightimg {
+    display: inline-block;
+    margin-left: 0.2rem;
+}
+
+.userPage .userFun li .userFundiv1 .z_rightimg,
+.userPage .userFun li .userFundiv2 .z_rightimg,
+.userPage .userFun li .userFundiv3 .z_rightimg,
+.userPage .userFun li .userFundiv4 .z_rightimg,
+.userPage .userFun li .userFundiv6 .z_rightimg {
+    width: 0.3rem;
+    height: 0.45rem;
+}
+
+.userContact {
+    padding-top: 0.8rem;
+    color: #bfbfbf;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 0.15625rem;
+}
+
+.userPage .userData .z_buleli {
+
+
+    background: linear-gradient(90deg, #82ceff, #77b7ff);
+    box-shadow: 0px 0px 22px 0px rgb( 0, 120, 255);
+}
+</style>
+<div class="userPage">
+    <!--<div class="userPageTop">
+        <img src="mobile/resource/images/user/head.png" class="head" ng-click="jumpUserSafeCenter()">
+        <div class="account">
+            {{UserInfo.name}}
+            <img src="mobile/resource/images/user/set@3x.png" ng-click="jumpUserSafeCenter()" class="z_setimg" />
+        </div>
+        <div class="z_userTop">
+            <p>我的资产（元）</p>
+            <p ng-click="userRecharge('userRecharge')"><img src="mobile/resource/images/user/recharge@3x.png" alt="" />充值</p>
+            <p ng-click="userRecharge('userWithdraw')"><img src="mobile/resource/images/user/withdraw@3x.png" alt="" />提现</p>
+        </div>
+        <div class="z_mymoney">{{data.all | PointToYuan | currency:"":2}}</div>
+    </div>-->
+    <div class="userBox">
+        <div ng-click="jumpUserSafeCenter()" class="userSetUp ">
+            <img src="/mobile/resource/images/common/setUP.png" alt="">
+        </div>
+        <div class="userTell">
+            <img src="/mobile/resource/images/common/userLogo.jpg" alt="">
+            <p> {{UserInfo.name}}</p>
+        </div>
+        <div class="userText">资产总额(元）</div>
+        <div class="userMoney">{{data.all | PointToYuan | currency:"":2}}</div>
+        <div class="userHandle">
+            <div ng-click="userRecharge('userRecharge')" class="userRecharge">
+                <img src="mobile/resource/images/user/recharge@3x.png" alt="">
+                <span>充值</span>
+            </div>
+            <div ng-click="userRecharge('userWithdraw')" class="userPresent">
+                <img src="mobile/resource/images/user/withdraw@3x.png" alt="" />
+               <span> 提现</span>
+            </div>
+        </div>
+    </div>
+    <div class="userData">
+        <ul>
+            <li>
+                <div class="dataDiv">{{userAccount.money | PointToYuan | currency:"":2}}</div>
+                <div class="Name">可用余额 (元)</div>
+            </li>
+            <li >
+                <div class="dataDiv">{{investDataInfo.profitMoney | PointToYuan | currency:"":2}}</div>
+                <div class="Name">累计收益 (元)</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="userFun">
+        <ul>
+            <li>
+                <a href="/mobile/user/InvestmentRecords" class="aLeft">
+                    <div class="userFundiv userFundiv1">
+                        <div class="z_userc"><img class="listIMG" src="mobile/resource/images/user/icon1.png">
+                            <div><span>投资记录</span></div>
+                        </div>
+                        <div><span></span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/mobile/user/paymentPlans" class="aRight">
+                    <div class="userFundiv userFundiv2">
+                        <div class="z_userc"><img class="listIMG" src="mobile/resource/images/user/icon2.png">
+                            <div ng-show="userAccount.waiting!=0"><span>回款计划</span></div>
+                            <div ng-show="userAccount.waiting==0"><span>回款计划</span></div>
+                        </div>
+                        <div><span></span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/mobile/user/fundDetails" class="aLeft">
+                    <div class="userFundiv userFundiv3">
+                        <div class="z_userc"><img class="listIMG" src="mobile/resource/images/user/icon3.png">
+                            <div><span>资金明细</span></div>
+                        </div>
+                        <div><span></span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/mobile/user/redPackage" class="aRight">
+                    <div class="userFundiv userFundiv4">
+                        <div class="z_userc"><img class="listIMG" src="mobile/resource/images/user/icon4.png">
+                            <div><span>我的红包</span></div>
+                        </div>
+                        <div>
+                            <div ng-show="userAccount.pocket!=0"><span>我的红包<span class="red" >{{userAccount.pocket}}</span>个</span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                            <div ng-show="userAccount.pocket==0"><span>暂无可用</span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="/mobile/user/rateCoupon" class="aRight">
+                    <div class="userFundiv userFundiv6">
+                        <div class="z_userc"><img class="listIMG" src="mobile/resource/images/user/icon5.png">
+                            <div><span>加息券</span></div>
+                        </div>
+                        <div>
+                            <div ng-show="userAccount.rates==0"><span>暂无可用</span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                            <div ng-show="userAccount.rates!=0"><span>{{userAccount.rates}}张</span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="tel:400-400-0000" class="aRight">
+                    <div class="userFundiv userFundiv6">
+                        <div class="z_userc"><img class="listIMG" src="mobile/resource/images/user/icon7.png">
+                            <div><span>客服电话</span></div>
+                        </div>
+                        <div>
+                            <div><span>400-400-0000</span><img class="z_rightimg" src="/mobile/resource/images/user/right@3x.png" /></div>
+                        </div>
+                    </div>
+    </div>
+    </a>
+    </li>
+    </ul>
+</div>
+<div class="userContact">
+    官方QQ群：554148838
+    <br> 官方网站：www.xinguanjf.com
+</div>
+<div ng-include="'mobile/templates/layout/bottom.html'"></div>
+</div>

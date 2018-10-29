@@ -1,0 +1,236 @@
+<head>
+
+    <title>公司介绍</title>
+</head>
+<style>
+    body {
+        background: #fff !important;
+    }
+
+    @charset "utf-8";
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    html {
+        height: 100%
+    }
+
+    body {
+        height: 100%;
+        background: url(../images/shouye_nvsheng_bg.png);
+        background-size: 100% 100%
+    }
+
+    #header img {
+        width: 100%
+    }
+
+    .swiper-container {
+        width: 100%;
+        -webkit-perspective: 1200px;
+        -moz-perspective: 1200px;
+        -ms-perspective: 1200px;
+        perspective: 1200px;
+        background: #FFFFFF;
+    }
+
+    /*.swiper-wrapper {
+        margin-top: 10px
+    }*/
+
+    .swiper-slide {
+        width: 70%;
+       
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d
+    }
+    
+    .swiper-slide .main-img {
+        width: 90%;
+        height: 6.66rem;
+        margin: 0 auto;
+        display: block
+    }
+    .swiper-slide-active .main-img{
+    	height: 7.66rem;
+    }
+    .swiper-slide-prev {
+    	padding-top: 0.5rem;
+    }
+    .swiper-slide-next {
+    	padding-top: 0.5rem;
+    }
+    /*#pagination {*/
+        /*position: absolute;*/
+        /*bottom: 100px;*/
+        /*width: 100%;*/
+        /*height: 20px;*/
+    /*}*/
+
+    /*#pagination .swiper-pagination-bullet {*/
+        /*width: 9.5%;*/
+        /*height: 20px;*/
+        /*float: left;*/
+        /*margin: 0 0 0 6.15%;*/
+        /*background: 0;*/
+        /*opacity: 1*/
+    /*}*/
+
+    .swiper-pagination-bullet i {
+        background: #41203f;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        border-radius: 50px;
+        display: block;
+        font-style: normal;
+        text-align: center;
+        margin: 0 auto;
+        color: #f5b55c
+    }
+
+    .swiper-pagination-bullet-active i {
+        -webkit-transform: scale(1.5);
+        background: url(mobile/resource/images/choumei/shouye_nvsheng_huangseb.png) no-repeat center 50%;
+        background-size: auto 100%;
+        color: #815d4b
+    }
+/*
+    @media screen and (min-height: 481px) {
+        .swiper-wrapper {
+            margin-top: 20px
+        }
+
+        /*#pagination {*/
+            /*bottom: 110px;*/
+        /*}*/
+    }
+
+    /*@media screen and (min-height: 569px) {
+        .swiper-wrapper {
+            margin-top: 40px
+        }*/
+
+        /*#pagination {*/
+            /*bottom: 120px*/
+        /*}*/
+
+        .swiper-pagination-bullet i {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 15px
+        }
+    }
+    .layui-layer{
+    	width: 80% !important;
+    }
+    #z_bigimg{
+        /*width: 60%;*/
+        /*height: 60vh;*/
+    }
+    #z_bigimg img{
+        width: 100%;
+        height: 100%;
+    }
+    #footer {
+        position: absolute;
+        bottom: 0
+    }
+
+    #footer img {
+        width: 100%;
+        display: block
+    }
+    .swiper-container{
+        padding-bottom:1rem;
+    }
+#pagination .swiper-pagination-bullet-active{
+    padding: 0.04rem;
+    background: none;
+    border: 0.03rem solid #ff767b;
+    margin-bottom: -0.05rem;
+}
+    .swiper-slide-prev,.swiper-slide-next{
+        opacity: 0.5;
+    }
+</style>
+<link rel="stylesheet" href="mobile/resource/css/about.css" type="text/css">
+<div ng-cloak>
+    <div class="bannerDiv">
+        <img src="mobile/resource/images/about/newAboutUsImg_02.png"/>
+        <img src="mobile/resource/images/about/newAboutUsImg_03.png"/>
+        <img src="mobile/resource/images/about/newAboutUsImg_04.png"/>
+        <img src="mobile/resource/images/about/newAboutUsImg_05.png"/>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                	 <div class="swiper-slide"  ng-click="showBigimg('mobile/resource/images/about/newzlzs1.png')"><img src="mobile/resource/images/about/newzlzs1.png" class="main-img">
+                    </div>
+                    <div class="swiper-slide" ng-click="showBigimg('mobile/resource/images/about/newzlzs2.png')"><img src="mobile/resource/images/about/newzlzs2.png" class="main-img"></div>
+              
+                   
+                </div>
+                <div class="swiper-pagination" id="pagination"></div>
+            </div>
+
+    
+    </div>
+    <div style="height: 0;overflow: hidden;">
+    	    <div id="z_bigimg">
+        <img src="" alt="">
+    </div>
+    </div>
+
+    <!--<div class="aboutContent">-->
+    <!--<div class="aboutData">-->
+    <!--<ul>-->
+    <!--<li class="liCurrent">-->
+    <!--<div class="aboutimg1"></div>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<div class="aboutimg2"></div>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<div class="aboutimg3"></div>-->
+    <!--</li>-->
+    <!--</ul>-->
+
+    <!--</div>-->
+    <!--<div class="aboutDataCon">-->
+    <!--<ul>-->
+    <!--<li class="aboutCurrent">-->
+
+    <!--<p>肩负实名 砥砺前行</p>-->
+    <!--<i>&nbsp;&nbsp;&nbsp;&nbsp;“欣冠”系杭州欣冠互联网科技有限公司开发运营的独立品牌，实缴注册资金五千万，是一家主要致力服务中小微实体企业产业融资，为广大中小微企业在生产和发展过程中提供优质的金融服务， 助力实体经济发展的金融信息服务平台。公司拥有独立的技术开发团队及运营团队，-->
+    <!--真正秉承“用户至上、体验流畅、安全理财”的经营理念来为两端的出借人、借款人搭建一个便捷、轻松，放心的互联网金融平台</i>-->
+    <!--</li>-->
+    <!--<li>-->
+
+    <!--<p>科技金融 专注小微</p>-->
+    <!--<i>&nbsp;&nbsp;&nbsp;&nbsp;“欣冠”将不同于多数互联网金融平台的庞杂业务体系和借款过于集中问题，在专注于解决中小微企业在生产和发展过程中资金短板的同时稳步布局中小型企业供应链金融、建企小额投标保证金借款、企业及个人小额信用贷款等各项金融信息服务，打造以科技金融为核心的综合型金融信息服务平台。-->
+    <!--以“合规安全、诚信透明、和谐高效、结果导向”为己任，稳健发展。最终实现其真正的社会价值，也为广大出借人多一个安全可信赖的稳健型投资理财渠道。</i>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<p>愿景可待 未来已来</p>-->
+    <!--<i>&nbsp;&nbsp;&nbsp;&nbsp;公司拥有严格的风险管理体系，来保障出借人的每一份钱，对获得成功申请借款的企业从贷前风控——借款——贷后管理——平台还款整个流程全程跟踪， 通过成熟的风控流程来确保项目和资金一对一匹配。<br>-->
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;“欣冠”致力于成为中国金融信息服务领域里最具专业性、稳健型、最值得信赖的互联网金融服务公司。</i>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        $(".aboutData li").click(function () {
+            $(".aboutDataCon li").eq($(this).index()).addClass("aboutCurrent").siblings().removeClass("aboutCurrent");
+            $(this).addClass("liCurrent").siblings().removeClass("liCurrent");
+        });
+    });
+</script>

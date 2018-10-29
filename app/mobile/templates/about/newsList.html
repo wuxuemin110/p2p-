@@ -1,0 +1,86 @@
+<head>
+
+	<title>媒体资讯</title>
+	<style type="text/css">
+		.z_abuNews {
+			width: 100%;
+			border-bottom: 1px solid #999999;
+			position: relative;
+			height: 3rem;
+		}
+		
+		.z_abuNews:last-child {
+			border-bottom: none;
+		}
+		
+		.z_abuNews .z_imgUrl {
+			width: 3rem;
+			height: 2.2rem;
+			border-radius: 0.2rem;
+			background-color: rgb( 178, 178, 178);
+			box-shadow: 0px 0px 0.13rem 0px rgb( 190, 190, 190);
+			position: absolute;
+			right: 0.5rem;
+			top: 0.4rem;
+			overflow: hidden;
+		}
+		
+		.z_abuNews img {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.z_titleUrl {
+			font-size: 0.33rem;
+			color: rgb( 51, 51, 51);
+			position: absolute;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 5.66rem;
+			left: 0.4rem;
+			top: 0.66rem;
+		}
+		
+		.z_creatTime {
+			position: absolute;
+			bottom: 0.75rem;
+			font-size: 0.32rem;
+			color: rgb( 102, 102, 102);
+			left: 0.4rem;
+		}
+	</style>
+</head>
+<div ng-cloak>
+	<div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" 
+		when-scrolled="selectPage()" 
+		ng-hide="isLastStationPage||isLocating">
+		<div class="newsList">
+			<!--<div class="newsListTop">
+				最新资讯
+			</div>-->
+<!--
+			<ul class="newUl">
+				<li ng-repeat="x in itemList">
+					<a href="/mobile/news/{{x.id}}">
+						<div class="newDiv">
+							<img ng-src="{{x.coverImage}}">
+							<div class="newTitle">{{x.title}}</div>
+							<div class="newSubTitle">{{x.subTitle}}</div>
+							<div class="newDate">{{x.updatedTime|newDate:'yyyy-MM-dd'}}</div>
+						</div>
+					</a>
+				</li>
+			</ul>-->
+<div class="z_abuNews" ng-repeat='item in itemList'>
+					<a class="z_titleUrl" href="/mobile/news/{{item.id}}" title="{{item.title}}">{{item.title}}</a>
+					<p class="z_creatTime">{{item.updatedTime| newDate:'yyyy-MM-dd'}}</p>
+					<a class="z_imgUrl" href="/mobile/news/{{item.id}}"><img ng-src='{{item.coverImage}}' /></a>
+				</div>
+		</div>
+		<span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+	</div>
+	<div>
+		<div ng-include="'mobile/templates/layout/bottom.html'"></div>
+	</div>
+</div>

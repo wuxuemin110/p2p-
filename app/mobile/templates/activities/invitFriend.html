@@ -1,0 +1,150 @@
+<head>
+
+		<title>邀请好友</title>
+
+		<meta name="description" content="欣冠是专业的互联网金融服务平台，互联网金融协会理事单位，提供优质借款服务和投资理财服务。提供优质债权,投资期限灵活,100元起投,收益稳健">
+
+		<meta name="keywords" content="欣冠,信贷网,稳定投资,稳健理财产品,投资理财,投资项目,P2P理财,互联网金融,短期理财">
+</head>
+
+<style>
+	body {
+		font-family: "Microsoft YaHei", "微软雅黑" !important;
+
+	}
+   	.invitFriend{
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+
+	}
+	.z_invitfriend{
+		/*background-image: url('mobile/resource/images/invitFriend/background1.jpg');
+		background-size: 100% 100%;*/
+
+	}
+	.invitFriend img {
+		vertical-align: top;
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		border: none;
+		height: auto;
+		display: block;
+	}
+	.z_invitfriend{
+
+	}
+	.z_invitfriend img{
+		display: block;
+		width: 100%;
+	}
+	.z_friendNumWrap{
+		/*background: #2e6bdd;*/
+	}
+	.z_friendNum{
+		width: 84%;
+		margin: 0 auto;
+		background: #3F80ED;
+		height: 1.5rem;
+		padding: 0.53rem;
+		box-sizing: border-box;
+	}
+	.z_friendNum::after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+	.z_friendNum p{
+		font-size: 0.37rem;
+		color: #fff;
+		float: left;
+	}
+	.z_invitfriend .z_invithead{
+		margin: 0 auto 0;
+		padding-top: 1.05rem;
+		width: 82%;
+		padding-bottom: 0.8rem;
+	}
+	.z_invitfriend .z_invittwofriend{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.z_friendNumP1{
+		width: 65%;
+	}
+	.z_friendNumP2{
+		width: 35%;
+	}
+	.z_erweima{
+		padding: 0.82rem 0 ;
+		background: #3150d7;
+	}
+	.z_erweima div{
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+	}
+	.z_erweima::after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+	.z_erweimaimg{
+      padding-left: 1.9rem;
+		padding-right: 0.45rem;
+	}
+	.z_erweimafx{
+		padding-left: 0.2rem;
+		padding-right: 1.7rem;
+		padding-top: 0.3rem;
+	}
+	.z_invitfriend .z_invitcontent{
+		width: 92%;
+		margin: 0 auto;
+	}
+	.z_invitfriend .z_invitexp{
+		width: 88%;
+		margin: 1.2rem auto 0;
+		padding-bottom: 1rem;
+	}
+	.z_friendNum font{
+		color: #f5f265;
+	}
+	.personWrap{
+		position: relative;
+	}
+	.personWrap .z_friendNumWrap{
+		position: absolute;
+		top: 0.74rem;
+		width: 100%;
+	}
+
+</style>
+
+<div class="z_invitfriend">
+	<!--<img src="mobile/resource/images/invitFriend/invithead.png" class="z_invithead" alt="">
+	<img src="mobile/resource/images/invitFriend/invittwofriend.png"  class="z_invittwofriend"  alt="">-->
+	<img src="mobile/resource/images/invitFriend/firend1.jpg"  alt="">
+	<div class="personWrap">
+		<div class="z_friendNumWrap">
+			<div class="z_friendNum">
+				<p class="z_friendNumP1">已经邀请 <font>{{invitData.inviteUser?invitData.inviteUser:'0'}}</font> 位有效好友</p>
+				<p class="z_friendNumP2">奖励: <font>{{invitData.inviteMoney?invitData.inviteMoney/100:'0'}}</font>元现金</p>
+			</div>
+		</div>
+		<img src="mobile/resource/images/invitFriend/firend2.jpg"  alt="">
+	</div>
+
+
+	<div class="z_erweima">
+		<div id="qrcode" class="z_erweimaimg">
+
+		</div>
+		<div class="z_erweimafx"><img src="mobile/resource/images/invitFriend/share.png" alt=""></div>
+	</div>
+
+	<img src="mobile/resource/images/invitFriend/firend3.jpg"  alt="">
+
+</div>

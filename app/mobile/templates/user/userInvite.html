@@ -1,0 +1,35 @@
+<script src="mobile/resource/js/qrcode.min.js"></script>
+<div ng-cloak>
+	 <div class="userInviteBg">
+	 	 <div class="userInviteTop">
+	 	 	   <div class="inviteNumber">
+	 	 	   	成功推荐好友(人)<br>
+	 	 	   	{{recommend.inviteUser}}
+	 	 	   </div>
+	 	 	    <div class="inviteMoney">
+	 	 	   	成功赚取(元)<br>
+	 	 	   	{{recommend.inviteMoney | PointToYuan | currency:"":2}}
+	 	 	   </div>
+	 	 </div>
+	 	 <div class="urlCodeBg">
+	 	 	<div class="urlCode" id="qrcode">
+	 	 	       <div class="codeLogo">
+	 	 	       	<img src="mobile/resource/images/user/codeLogo.png">
+	 	 	       </div>
+	 	    </div>
+	 	    <div class="myCode">
+	 	    	我的邀请码：<span ng-bind="recommend.recommendCode"></span>
+	 	    </div>
+	 	 </div>
+	 	 
+	 	 <div class="inviteBtn">
+	 	 	<a href="/mobile/invitFriend">立即邀请</a>
+	 	 </div>
+	 	 
+	 	
+	 </div>
+	
+	<div>
+		<div ng-include="'mobile/templates/layout/bottom.html'"></div>
+	</div>
+</div>

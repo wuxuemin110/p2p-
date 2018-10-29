@@ -1,0 +1,176 @@
+<title>投资</title>
+<div ng-cloak>
+
+	<div class="main-container-wrap">
+		<div class="investWrap" ng-show="rightShow==2">
+			<div class="c">
+				<div class="conTop">
+					<div class="c1">
+						<span class="span1">剩余可投</span>
+						<span style="color: #e20214;">{{(plan.amount-plan.nowSum)<0?0:(plan.amount-plan.nowSum) | PointToYuan | currency:"":0}} 元</span>
+					</div>
+					<div class="c1" style="border: 0;">
+						<span class="span1">账户余额</span>
+						<span style="color: #e20214;">{{UserInfo.money | PointToYuan | currency:"":2}} 元</span>
+					</div>
+				</div>
+				<div class="c1" style="display: none;">
+					<span>预期收益：</span>
+					<!-- <span><font style="color: #ff0000;">{{(money*plan.rate) | PointToYuan | currency:"":0}}</font> 元</span>-->
+
+					<span ng-show="plan.stagingUnit=='day'" style="text-align:right"><font style="color: #ff0000;" >                          	
+                            	{{((money)*(plan.rate+plan.rasingRate)/3600*plan.staging) | PointToYuan | currency:"":2}}                          
+                            </font>元</span>
+					<span ng-show="plan.stagingUnit=='month'" style="text-align:right"><font style="color: #ff0000;" >                          	
+                            	{{((money)*(plan.rate+plan.rasingRate)/120*plan.staging) | PointToYuan | currency:"":2}}                           
+                            </font>元</span>
+				</div>
+				<div class="conTip">
+					输入购买金额
+				</div>
+				<div class="inputBuyMoney">
+					<span>购买金额</span>
+
+					<!--<input ng-model="money" id="money"
+                                    name="money"
+                                   type="number" class="form-control"  placeholder="{{plan.minAmount | PointToYuan}}元起投"
+                                    ng-blur="change()" autocomplete="new-password">-->
+					<input ng-model="money" id="money" name="money" type="number" placeholder="{{plan.minAmount | PointToYuan}}元起投" autocomplete="new-password" ng-blur="change(plan)">
+					<button type="button" class="allBtn" ng-click="allMoney()">
+                                                                                                            全投
+                                </button>
+				</div>
+				<div class="conTip">
+					<span>每位用户限投：<font style="color: #e20214;">{{plan.maxAmount | PointToYuan | currency:"":0}}元</font></span>投资区间：
+					<font style="color: #e20214;">{{plan.minAmount | PointToYuan | currency:"":0}}元</font>起投
+				</div>
+				<div class="conBalance">
+					<span>{{UserInfo.money | PointToYuan | currency:"":2}} 元</span>账户余额
+				</div>
+				<div class="useRedPacket" ng-click="useRedPacketClick()">
+					<span>{{useRedPacket}}</span>使用红包
+				</div>
+				<div class="useRedPacket" ng-click="useRateClick()">
+					<span>{{useRate}}</span>使用加息券
+				</div>
+				
+				<div class="btnBg">
+					<a ng-show="plan.state==1" class="gray">
+						还款中
+					</a>
+					<a ng-show="plan.state==2" class="gray">
+						已还完
+					</a>
+					<a ng-show="plan.state==0" ng-click="beforePostInvestment(plan,useRateVoucher,oneRedVoucher)" class="red">			
+                                                                 确定
+					</a>
+				</div>
+				
+				
+			</div>
+		</div>
+
+	</div>
+
+	<div class="useRedPacketBg" id="useRedPacketBg">
+		<div class="boxCloseBg">
+			<div class="boxClose" ng-click="boxClose()">
+				返回
+			</div>
+		</div>
+		<!--红包，加息券-->
+		<!--<div ng-show="useType==0">-->
+
+		<ul class="rateTable">
+			<li ng-repeat="redPackage  in redVouchers" ng-click="change2(redPackage,typeId)">
+				<div class="money" ng-show="typeId==0"><span class="fontSize12">￥</span>{{redPackage.voucherValue | PointToYuan}}</div>
+				<div class="money" ng-show="typeId==2">{{redPackage.voucherValue / 10}}<span class="fontSize12">%</span></div>
+				<div class="describe">
+					<div>
+						<h2>{{redPackage.name}}</h2>
+						<p>{{redPackage.moneyCondition}}</p>
+						<p>{{redPackage.dayCondition}}</p>
+						<p>{{redPackage.beginTime | newDate:"yyyy-MM-dd"}} — {{redPackage.expiredTime | newDate:"yyyy-MM-dd"}}</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<!--<ul class="rateTable" ng-show="typeId==2">
+			<li ng-repeat="redPackage  in rateVouchers" ng-click="change2(redPackage,typeId)">
+				<div class="money" >{{redPackage.voucherValue/10}}<span class="fontSize12" ng-show="typeId==2">%</span></div>
+				<div class="describe">
+					<div>
+						<h2>{{redPackage.name}}</h2>
+						<p>投资金额≥{{redPackage.voucherCondition | PointToYuan}}</p>
+						<p>{{redPackage.restricta}}天以上标的使用</p>
+						<p>{{redPackage.beginTime | newDate:"yyyy-MM-dd"}} — {{redPackage.expiredTime | newDate:"yyyy-MM-dd"}}</p>
+					</div>
+				</div>
+			</li>
+		</ul>-->
+	</div>
+
+	<!--</div>-->
+</div>
+
+<div class="confirmBoxBg" ng-show="isShow">
+	<div class="confirmBox">
+		
+			<div class="boxTitle">
+				<img src="mobile/resource/images/investment/confirmBoxclose.png" ng-click="confirmBoxclose()"> 请确认投资金额
+			</div>
+			<div class="boxContent">
+				<table class="boxTable">
+					<tr>
+						<td align="left" width="60%">使用账户可用余额：</td>
+						<td align="right" width="40%"><span style="color: #df0909;">
+		  	   	    		{{money-oneRedVoucher.voucherValue}}</span>元</td>
+					</tr>
+					<tr>
+						<td align="left">使用账户红包：</td>
+						<td align="right"><span style="color: #df0909;">
+		  	   	    		{{oneRedVoucher.voucherValue}}</span>元</td>
+					</tr>
+					<tr>
+						<td align="left">使用加息劵：</td>
+						<td align="right" ng-show="useRateVoucher.voucherValue!=0"><span style="color: #df0909;">
+		  	   	    		{{useRateVoucher.voucherValue}}</span>%</td>
+		  	   	    		<td align="right" ng-show="useRateVoucher.voucherValue==0"><span style="color: #df0909;">
+		  	   	    		--</span></td>
+					</tr>
+					<tr>
+						<td align="left">合计投资金额：</td>
+						<td align="right"><span style="color: #df0909;">
+		  	   	    		{{(money)}}</span>元</td>
+					</tr>
+					<tr ng-show="plan.specialPlan==1">
+                      <!--<tr>-->
+						<td align="left">约标密码：</td>
+						<td align="right"><span>
+							 <form class="layui-form" style="display:none"> 
+  <input type="text" />
+  <input type="password" /> 
+</form> 
+                            <input type="number" style="width:0;height:0;float:left;visibility:hidden"/ />
+                             <input type="text" style="width:0;height:0;float:left;visibility:hidden"/>
+                              <input type="password" style="width:0;height:0;float:left;visibility:hidden"/>
+							 <input type="password" style="display: none;" autocomplete="off" name="password"/>
+		  	   	    		<input ng-model="specialPlanPassword" name="password"  onfocus="this.type=''"  type="password" class="specialPlanPassword"  autocomplete="new-password" placeholder="请输入约标密码"  ></span></td>
+
+					</tr>
+
+				</table>
+		</div>
+		<div class="boxBtnBg">
+			<div class="boxBtnLeft" ng-click="confirmBoxclose()">
+					取消
+			</div>
+			<div class="boxBtnRight" ng-click="postInvestment(tradePassword,specialPlanPassword)">
+					确认
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+</div>

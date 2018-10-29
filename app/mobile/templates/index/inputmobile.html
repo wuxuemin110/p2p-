@@ -1,0 +1,23 @@
+<title>注册/登录</title>
+<style>
+	body{
+		background: #fff !important;
+	}
+</style>
+<!--<div class="backHrefBg">
+			<div class="backHref" >
+				<a href="/">返回</a>
+			</div>
+		</div>-->
+<div class="inputmobileBg">
+	 <div class="inputmobile">
+	 	  <input type="text" placeholder="请输入手机号码"  ng-model="inputmobile">
+	 </div>
+	 <div class="inputmobileBtn" ng-show="inputmobileBtn" ng-click="inputmobileClick()">
+	 	  下一步
+	 </div>
+	 <div class="inputmobileBtn btnGray" ng-show="!inputmobileBtn">
+	 	  下一步
+	 </div>
+</div>
+<div ng-include="'mobile/templates/layout/bottom.html'"></div>

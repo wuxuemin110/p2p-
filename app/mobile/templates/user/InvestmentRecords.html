@@ -1,0 +1,26 @@
+<title>投资记录</title>
+
+<div ng-cloak>
+<div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" when-scrolled="selectPage()" ng-hide="isLastStationPage||isLocating">
+	<div class="investmentRecordData">
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>	
+				<th width="21%">项目名称</th>
+				<th width="20%">金额（元）</th>
+				<th width="19%">红包（元）</th>
+				<th width="19%">加息（%）</th>
+				<th width="21%">时间</th>
+			</tr>
+			<tr ng-repeat="recordData in itemList">
+				<td>{{recordData.name}}</td>
+				<td>{{recordData.money | PointToYuan }}</td>
+				<td>{{recordData.pocketMoney | PointToYuan }}</td>
+				<td>{{recordData.raisingRates/10}}</td>
+				<td>{{recordData.createdTime | newDate:'yyyy-MM-dd HH:mm:ss'}}</td>
+			</tr>
+
+		</table>
+	</div>
+	 <span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+</div>
+</div>

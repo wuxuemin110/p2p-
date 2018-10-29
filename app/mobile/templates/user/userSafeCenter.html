@@ -1,0 +1,219 @@
+<title>安全中心</title>
+<div ng-cloak>
+	<div class="userSafeCenter">
+		<!--未认证-->
+		<div class="userSafeDiv" ng-if="UserInfo.hasCardId!=true">
+			<span class="noCertified">未认证</span>实名认证
+			<div class="arrowShow">
+			</div>
+		</div>
+
+		<!--已认证-->
+		<div ng-if="UserInfo.hasCardId!=false" class="userSafeDiv">
+			<span class="certified">已认证</span>实名认证
+			<div class="arrowShow">
+			</div>
+		</div>
+		<div class="submitBank" ng-show="showRealnameFlat">
+			<div class="submitBankTop">身份证</div>
+			<div class="inputGroup">
+				<span class="inputGroupAddon">真实姓名:</span>
+				<input type="text" class="form-control" placeholder="请输入真实姓名" aria-describedby="basic-addon1" ng-model="userCard.realName">
+			</div>
+			<div class="inputGroup">
+				<span class="inputGroupAddon">身份证号:</span>
+				<input type="text" class="form-control" placeholder="请输入身份证号码" aria-describedby="basic-addon1" ng-model="userCard.idCard">
+			</div>
+			<div class="bankTip">
+				请填写本人真实信息，核实后无法更改
+			</div>
+			<div class="submitBankTop">银行卡</div>
+			<div class="inputGroup" ng-click="selectBankBtn()">
+				<span class="inputGroupAddon">银行</span>
+				<div class="selectBank" ng-model="userCard.bankCode">{{selectBankText}}</div>
+				<div class="arrowBank">
+				</div>
+				<!--<select class="formControl" ng-model="userCard.bankCode" ng-init="userCard.bankCode='0'">
+					<option value="0">请选择开户银行</option>
+					<option value="{{x.bankCode}}" ng-repeat="x in banks">{{x.bankName}}</option>
+
+				</select>-->
+			</div>
+			<div class="inputGroup">
+				<span class="inputGroupAddon">银行卡号:</span>
+				<input type="text" class="form-control" ng-model="userCard.cardNumber" placeholder="请输入银行卡号">
+			</div>
+
+			<div class="inputGroup" ng-click="selectCityBg()">
+				<span class="inputGroupAddon">所在地区:</span>
+				<span ng-if="provinceTrue"></span>
+				<span ng-if="provinceTrue">{{userCard.province}},</span>
+				<span ng-if="cityTrue"></span>
+				<span ng-if="cityTrue">{{userCard.city}},</span>
+				<span>{{userCard.district}}</span>
+				<div class="arrowBank">
+				</div>
+				<!--<select class="formSelect" ng-model="userCard.province" ng-options="key as key for (key,value) in cityData">
+					<option value="">选择省</option>
+				</select>
+				<select class="formSelect" ng-model="userCard.city" ng-options="key as key for (key,value) in cityData[userCard.province]">
+					<option value="">选择市</option>
+				</select>
+				<select class="formSelect" style="margin: 0px;" ng-model="userCard.district" ng-options="key as key for (key,value) in cityData[userCard.province][userCard.city]">
+					<option value="">选择区县</option>
+				</select>-->
+			</div>
+
+			<div class="submitBankBtn" ng-click="updateRealName(userCard)">提交
+			</div>
+
+		</div>
+		<div class="modifyPassword" ng-show="showRealnameFlat">
+
+		</div>
+
+		<!--绑定手机-->
+		<div class="userSafeDiv">
+			<span>{{UserInfo.name}}</span>绑定手机
+		</div>
+
+		<!--银行卡管理-->
+		<div ng-if="UserInfo.hasCardId!=true" class="userSafeDiv" ng-click="bindBankCard()">
+			<span>未绑定</span>银行卡管理
+			<div class="arrowShow">
+			</div>
+		</div>
+
+		<div ng-if="UserInfo.hasCardId!=false" class="userSafeDiv" ng-click="showBankCard()">
+			<span>已绑定</span>银行卡管理
+			<div ng-class="showBankCardDiv">
+			</div>
+		</div>
+		<div class="showBankCard" ng-show="showBankCardFlat">
+			<div class="bankCardTop">如需更换银行卡，请联系客服</div>
+			<div class="bankCardBg">
+				<div class="bankName">{{bankInfo[0].bankName}}</div>
+				<div class="bankInfo">
+					<img ng-src="mobile/resource/images/user/{{bankInfo[0].bankCode}}.png">
+					<div class="bankInfoText">
+						<font>储蓄卡: {{bankInfo[0].cardNumber}}</font>
+						<br>持卡人: {{bankInfo[0].realName}}
+					</div>
+
+				</div>
+				<div class="state">
+					已绑定
+				</div>
+			</div>
+		</div>
+		<!--登录密码-->
+		<div class="userSafeDiv" ng-click="showPassword()">
+			<span>修改</span>登录密码
+			<div ng-class="showPasswordDiv">
+			</div>
+		</div>
+		<div class="showPassword" ng-show="showPasswordFlat">
+			<div class="inputGroup">
+				<span class="span1">原登陆密码</span>
+				<input type="password" class="passwordInput" ng-model="password.password" placeholder="请输入原登录密码">
+			</div>
+			<div class="inputGroup">
+				<span class="span1">新登陆密码</span>
+				<input type="password" class="passwordInput" ng-model="password.passwordNew" placeholder="请输入6~16位字母和数字密码">
+			</div>
+			<div class="inputGroup">
+				<span class="span1">确认登陆密码</span>
+				<input type="password" class="passwordInput" ng-model="password.passwordNew2" placeholder="请再次输入新的登录密码">
+			</div>
+
+			<div class="passwordBtn" ng-click="update()">
+				确定修改
+			</div>
+		</div>
+
+		<!--交易密码-->
+		<!--未设置交易密码-->
+		<div ng-if="UserInfo.hasTradePassword!=true" ng-click="showfrom()" class="userSafeDiv"><span>设置</span>交易密码
+			<div ng-class="showfromDiv">
+			</div>
+		</div>
+		<!--已设置交易密码-->
+		<div ng-if="UserInfo.hasTradePassword!=false" ng-click="showfrom()" class="userSafeDiv">
+			<span>修改</span>交易密码
+			<div ng-class="showfromDiv">
+			</div>
+
+		</div>
+
+		<div class="showPassword" ng-show="showfromFlat">
+			<div class="inputGroup">
+				<span class="span1">交易密码</span>
+				<input type="password" class="passwordInput" ng-model="tradePassword.pwd1" autocomplete="new-password" placeholder="请输入6位数字交易密码">
+			</div>
+			<div class="inputGroup">
+				<span class="span1">确认交易密码</span>
+				<input type="password" class="passwordInput" ng-model="tradePassword.pwd2" autocomplete="new-password" placeholder="请再次输入交易密码">
+			</div>
+			<div class="phoneCodeBg">
+				<input ng-model="tradePassword.code" type="text" autocomplete="off" name="code" placeholder="请输入验证码" class="phoneCode">
+
+				<div class="verifySms">
+					<a ng-click="sendSms()" ng-show="!DisableSendBtn">{{sendBtnText}}</a>
+					<a ng-show="DisableSendBtn">{{sendBtnText}}</a>
+				</div>
+			</div>
+			<div class="passwordBtn" ng-click="updateTradePassword()">
+				确定
+			</div>
+
+		</div>
+
+		<div class="signOut" ng-click="showConfirm()">
+			<span>安全退出</span>
+		</div>
+		<div class="selectBankBg">
+			<div class="bankClose" ng-click="bankClose()">返回</div>
+			<ul>
+				<li ng-repeat="x in banks" ng-click="selectBank(x)">
+				<img ng-src="{{x.bankPic}}">{{x.bankName}}</li>
+			</ul>	
+		</div>
+		<div class="selectCityBg">
+			<div class="selectCity province">
+
+				<div class="cityCloseBg">
+					<div class="cityClose" ng-click="cityClose()"><span>取消</span>选择省</div>
+				</div>
+				<ul >
+					<li ng-repeat="(x, y) in cityData" ng-click="selectProvince(x)">{{x}}</li>
+				</ul>
+
+			</div>
+			<div class="selectCity city">
+
+				<div class="cityCloseBg">
+					<div class="cityClose" ng-click="cityClose()"><span>取消</span>选择市</div>
+				</div>
+
+				<ul >
+					<li ng-repeat="(x, y) in cityData[userCard.province]" ng-click="selectCity(x)">{{x}}</li>
+				</ul>
+
+			</div>
+			<div class="selectCity district">
+
+				<div class="cityCloseBg">
+					<div class="cityClose" ng-click="cityClose()"><span>取消</span>选择区县</div>
+				</div>
+				<ul >
+					<li ng-repeat="(x, y) in cityData[userCard.province][userCard.city]" ng-click="selectDistrict(x)">{{x}}</li>
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+	<!--尾部-->
+	<div ng-include="'mobile/templates/layout/bottom.html'"></div>
+	<!--尾部结束-->
+</div>

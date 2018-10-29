@@ -1,0 +1,96 @@
+<title>
+	回款计划</title>
+<div ng-cloak>
+
+	<div class="paymentPlanBg">
+		<ul class="topUl">
+			<li ng-class="{'currentLi':redIndex==1}">
+				<a href="#" ng-click="redIndex=1"><span>待回款</span></a>
+			</li>
+			<li ng-class="{'currentLi':redIndex==2}">
+				<a href="#" ng-click="redIndex=2"><span>已回款</span></a>
+			</li>
+		</ul>
+		<div class="allMoney">
+			已收本金(元)：<span>{{totalData.repayedCorpus | PointToYuan | currency:"":2}}</span>，已收利息(元)：<span>{{totalData.repayedInterest | PointToYuan | currency:"":2}}</span>
+		</div>
+		<!-- 未使用-->
+		<div ng-if="redIndex==1">
+			<div class="paymentPlanList" >
+               <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" red-pack-scroll0="selectPage()" ng-hide="isLastStationPage||isLocating">
+				<ul >
+					<li ng-repeat="paymentPlan in itemList">
+						 <div class="liTop">
+						 	  <div class="planName">{{paymentPlan.name}}</div>
+						 	  <div>
+						 	  	  <div class="liDivLeft">
+						 	  	  	 <div>
+						 	  	  	  <span>{{paymentPlan.corpus | PointToYuan | currency:"":2}}</span><br>回款本金(元)
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="liDivRight">
+						 	  	  	 <div>
+						 	  	  	  <span>{{paymentPlan.interest | PointToYuan | currency:"":2}}</span><br>回款利息(元)
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  </div>
+						 </div>
+						 <div class="repayDay">
+						 	<span>{{paymentPlan.repayDay | newDate:'yyyy-MM-dd' }}</span>应收日期
+						 </div>
+						 <div class="repayDay">
+						 	<span>{{paymentPlan.time | newDate:'yyyy-MM-dd' }}</span>回款日期
+						 </div>
+						 <div class="repayDay" style="border: 0;">
+						 	<span>{{paymentPlan.period}}/{{paymentPlan.length}}</span>本期/总期
+						 </div>
+					</li>
+				</ul>
+				<span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+              </div>
+			</div>
+		</div>
+		
+		<div ng-if="redIndex==2">
+			
+           <div class="paymentPlanList" >
+               <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" red-pack-scroll1="selectPage1()" ng-hide="isLastStationPage||isLocating">
+				<ul >
+					<li ng-repeat="paymentPlan in itemList1">
+						 <div class="liTop">
+						 	  <div class="planName">{{paymentPlan.name}}</div>
+						 	  <div>
+						 	  	  <div class="liDivLeft">
+						 	  	  	 <div>
+						 	  	  	  <span>{{paymentPlan.corpus | PointToYuan | currency:"":2}}</span><br>回款本金(元)
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="liDivRight">
+						 	  	  	 <div>
+						 	  	  	  <span>{{paymentPlan.interest | PointToYuan | currency:"":2}}</span><br>回款利息(元)
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  </div>
+						 </div>
+						 <div class="repayDay">
+						 	<span>{{paymentPlan.repayDay | newDate:'yyyy-MM-dd' }}</span>应收日期
+						 </div>
+						 <div class="repayDay">
+						 	<span>{{paymentPlan.time | newDate:'yyyy-MM-dd' }}</span>回款日期
+						 </div>
+						 <div class="repayDay" style="border: 0;">
+						 	<span>{{paymentPlan.period}}/{{paymentPlan.length}}</span>本期/总期
+						 </div>
+					</li>
+				</ul>
+				<span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+              </div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!--<div ng-include="'templates/layout/bottom.html'"></div>-->
+
+</div>

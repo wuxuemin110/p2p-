@@ -1,0 +1,88 @@
+<title>
+	加息券</title>
+<div ng-cloak>
+
+	<div class="redPacketCon">
+		<ul class="topUl">
+			<li ng-class="{'currentLi':redIndex==1}">
+				<a href="#" ng-click="redIndex=1"><span>未使用</span></a>
+			</li>
+			<li ng-class="{'currentLi':redIndex==2}">
+				<a href="#" ng-click="redIndex=2"><span>已使用</span></a>
+			</li>
+			<li ng-class="{'currentLi':redIndex==3}">
+				<a href="#" ng-click="redIndex=3"><span>已过期</span></a>
+			</li>
+		</ul>
+		<!-- 未使用-->
+		<div ng-if="redIndex==1">
+			<div class="redList" id="redList">
+               <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" red-pack-scroll0="selectPage()" ng-hide="isLastStationPage||isLocating">
+				<ul class="rateTable">
+					<li ng-repeat="redPackage in itemList">
+						<div class="money">{{redPackage.voucherValue/10}}<span class="fontSize12">%</span></div>
+
+						<div class="describe">
+							<div>
+								<h2>{{redPackage.name}}</h2>
+								<p>{{redPackage.moneyCondition}}</p>
+								<p>{{redPackage.dayCondition}}</p>
+								<p>{{redPackage.beginTime | newDate:"yyyy-MM-dd"}} — {{redPackage.expiredTime | newDate:"yyyy-MM-dd"}}</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+              </div>
+			</div>
+		</div>
+		<!-- 已使用-->
+		<div ng-if="redIndex==2">
+			<div class="redList grayList" id="grayList">
+				<div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" red-pack-scroll1="selectPage1()" ng-hide="isLastStationPage||isLocating">
+				<ul class="rateTable">
+					<li ng-repeat="redPackage in itemList1">
+						<div class="money">{{redPackage.voucherValue/10}}<span class="fontSize12">%</span></div>
+
+						<div class="describe">
+							<div>
+								<h2>{{redPackage.name}}</h2>
+								<p>{{redPackage.moneyCondition}}</p>
+								<p>{{redPackage.dayCondition}}</p>
+								<p>{{redPackage.beginTime | newDate:"yyyy-MM-dd"}} — {{redPackage.expiredTime | newDate:"yyyy-MM-dd"}}</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<span class="noMore fontSize14" ng-if="noMore1">没有更多了</span>
+              </div>
+			</div>
+
+		</div>
+		<!-- 已使用-->
+		<div ng-if="redIndex==3">
+			<div class="redList expireList" id="expireList">
+               <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" red-pack-scroll2="selectPage2()" ng-hide="isLastStationPage||isLocating">
+				<ul class="rateTable">
+					<li ng-repeat="redPackage in itemList2">
+						<div class="money">{{redPackage.voucherValue/10}}<span class="fontSize12">%</span></div>
+
+						<div class="describe">
+							<div>
+								<h2>{{redPackage.name}}</h2>
+								<p>{{redPackage.moneyCondition}}</p>
+								<p>{{redPackage.dayCondition}}</p>
+								<p>{{redPackage.beginTime | newDate:"yyyy-MM-dd"}} — {{redPackage.expiredTime | newDate:"yyyy-MM-dd"}}</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+              <span class="noMore fontSize14" ng-if="noMore2">没有更多了</span>
+			</div>
+          </div>
+		</div>
+	</div>
+
+	<!--<div ng-include="'templates/layout/bottom.html'"></div>-->
+
+</div>

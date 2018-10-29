@@ -1,0 +1,33 @@
+<div ng-cloak>
+	<div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" when-scrolled="selectPage()" ng-hide="isLastStationPage||isLocating">
+		<div class="activityCenter">
+			<div class="aboutActivity">
+
+				<ul>
+					<li ng-repeat="activity in itemList">
+						<a href="{{activity.url}}">
+							<div class="aboutActivityImg">
+								<img src="mobile/resource/images/about/aboutActivityImg.png" class="activityStatus" ng-if="activity.status!=0">
+								<img ng-src="{{activity.picture}}">
+							</div>
+							<div class="aboutActivityText">
+								<div class="title">
+									<span>{{activity.title}}</span>
+								</div>
+								<div class="date">
+									{{activity.startTime | newDate:'yyyy-MM-dd'}}&nbsp;至&nbsp;{{activity.endTime | newDate:'yyyy-MM-dd'}}
+								</div>
+
+							</div>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+			<span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+		</div>
+	</div>
+	<div>
+		<div ng-include="'mobile/templates/layout/bottom.html'"></div>
+	</div>
+</div>

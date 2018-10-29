@@ -1,0 +1,28 @@
+<head>
+
+	<title>产品说明</title>
+</head>
+
+<link rel="stylesheet" href="mobile/resource/css/about.css" type="text/css">
+<div ng-cloak>
+	<div class="productIntruduction">
+		<div class="productIntruductionCon">
+			<ul>
+				<li class="productCurrent">
+					<img src="mobile/resource/images/about/product1.jpg" />
+					<img src="mobile/resource/images/about/product2.jpg" />
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$(".productIntruductionTop li").click(function() {
+			$(".productIntruductionCon li").eq($(this).index()).addClass("productCurrent").siblings().removeClass("productCurrent");
+			$(this).addClass("liIndex").siblings().removeClass("liIndex");
+		});
+	});
+</script>

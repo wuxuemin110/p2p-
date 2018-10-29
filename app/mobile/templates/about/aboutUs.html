@@ -1,0 +1,177 @@
+<head>
+
+    <title>发现</title>
+    <style>
+        .z_abuActHead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #999999;
+            padding: 0.2rem;
+        }
+
+        .z_abuActHead span {
+            font-size: 0.4rem;
+        }
+
+        .z_abuActHead img {
+            height: 0.4rem;
+            width: 0.3rem;
+        }
+
+        .z_abuActImg {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 0.6rem;
+        }
+
+        .z_abuActImg a {
+            display: block;
+            width: 30%;
+        }
+
+        .z_abuActImg img {
+            width: 100%;
+            height: 2.15rem;
+        }
+
+        .z_abuNews {
+            width: 100%;
+            border: 1px solid #d0d8e4;
+            position: relative;
+            height: 2.66rem;
+            margin-top: 0.4rem;
+        }
+
+        .z_abuNews:last-child {
+            border-bottom: none;
+        }
+
+        .z_abuNews .z_imgUrl {
+            width: 1.92rem;
+            height: 1.92rem;
+            border-radius: 50%;
+            background-color: rgb(178, 178, 178);
+            box-shadow: 0px 0px 0.13rem 0px rgb(190, 190, 190);
+            position: absolute;
+            right: 0.5rem;
+            top: 0.4rem;
+            overflow: hidden;
+        }
+
+        .z_abuNews img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .z_titleUrl {
+            font-size: 0.34666rem;
+            color: #333333;
+            position: absolute;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 5.64rem;
+            left: 0.8rem;
+            top: 0.4rem;
+            font-weight: bold;
+            display: block;
+        }
+        .z_abuNews i{
+
+            position: absolute;
+            width: 0.13rem;
+            height: 0.13rem;
+            display: block;
+            background: #0096ff;
+            border-radius: 50%;
+            top:0.58rem;
+            left:0.53rem;
+
+        }
+        .z_creatTime {
+            position: absolute;
+            bottom: 0.32rem;
+            font-size: 0.32rem;
+            color: rgb(102, 102, 102);
+            left: 0.8rem;
+        }
+    </style>
+</head>
+<div ng-cloak>
+    <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" ng-hide="isLastStationPage||isLocating">
+        <!--when-scrolled="selectPage()"-->
+
+        <div class="aboutMain">
+
+            <div class="findBox">
+                <div class="findItem">
+                    <div class="findDsp">
+                        <h1 class="Name">平台</h1>
+                        <p class="EnName">My platform</p>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="/mobile/about">
+                                <img src="/mobile/resource/images/investment/find1.png" alt="">
+                                <p>公司介绍</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/mobile/noticesList">
+                                <img src="/mobile/resource/images/investment/find2.png" alt="">
+                                <p>平台公告</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/mobile/faqList">
+                                <img src="/mobile/resource/images/investment/find3.png" alt="">
+                                <p>常见问题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/mobile/newsList">
+                                <img src="/mobile/resource/images/investment/find4.png" alt="">
+                                <p>媒体报道</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="findNews">
+                        <div class="actPic">
+                            <img src="/mobile/resource/images/investment/actPic.jpg" alt="">
+                        </div>
+                        <div class="z_abuActImg">
+                            <a href="{{item.url}}" ng-repeat="item in itemList" ng-if='$index<3'>
+                                <img ng-src="{{item.picture}}"/>
+                            </a>
+                        </div>
+                        <div class="findMore">
+                            <a href="/mobile/activityCenter">更多 >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboutActivity" style="width: 100%;background: white;">
+                <div class="z_abuActHead">
+                    <span>理财资讯 </span><a href="/mobile/newsList"><img src="mobile/resource/images/about/showIcon.jpg"
+                                                                      alt=""/></a>
+                </div>
+                <div class="newList">
+                <div class="z_abuNews" ng-repeat='item in newsList'>
+                    <i></i>
+                    <a class="z_titleUrl" href="/mobile/news/{{item.id}}" title="{{item.title}}"> {{item.title}}</a>
+                    <p class="z_creatTime">{{item.updatedTime| newDate:'yyyy-MM-dd'}}</p>
+                    <a class="z_imgUrl" href="/mobile/news/{{item.id}}"><img ng-src='{{item.coverImage}}'/></a>
+                </div>
+                </div>
+            </div>
+            <span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+        </div>
+        <div>
+            <div ng-include="'mobile/templates/layout/bottom.html'"></div>
+        </div>
+    </div>
+</div>

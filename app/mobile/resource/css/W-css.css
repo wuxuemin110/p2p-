@@ -1,0 +1,458 @@
+
+.clearfix:before, .clearfix:after{content: ""; display: table; font-size:0 !important; line-height:0!important; height:0!important;}  
+	.clearfix:after { clear: both;}
+	.clearfix { *zoom: 1; }
+	.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+.fl{float:left}.fr{float:right}
+
+.flicking_con a{
+	width: 0.4rem !important;
+	height: 0.08rem;
+	background-color: #e6e6e6;
+	border-radius: 0;
+}
+.flicking_con a.on{
+	border-radius: 0;
+	background: #ff3637;
+
+}
+.noticelist li{
+	float: left;
+	width: 25%;
+	padding: 0.53rem 0px 0.33rem 0px;
+
+}
+.noticelist li a{
+	display: block;
+}
+.noticelist li img{
+	width: 1.06rem;
+	height: 1.06rem;
+	display: block;
+	margin: 0 auto;
+}
+.noticelist ul{
+	overflow: hidden;
+}
+.bgLine{
+	width: 100%;
+	height: 0.26rem;
+	background: #f5f5f5;
+}
+.noticelist ul li p{
+	font-size: 13px;
+	color: #444444;
+	text-align: center;
+	margin-top: 0.13rem;
+}
+[data-dpr="2"] .noticelist ul li p{
+	font-size: 26px;
+}
+[data-dpr="3"] .noticelist ul li p{
+	font-size: 39px;
+}
+.noticelist{
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0px -5px 5px #fff;
+	
+	height: 2.66rem;
+}
+.noticelist ul{
+	background-color: #fff;
+
+}
+.noticeBg{
+
+	background: #fff;
+   	width: 9.4rem;
+	margin:0 auto;
+	box-sizing: border-box;
+
+	z-index: 51;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+.newUserBox{
+	background: #fff;
+	padding-bottom: 0.4rem;
+}
+
+#newUser{
+background: none;
+}
+
+.newUserBtnDiv{
+	background: transparent;
+
+}
+
+.percentBox .percentText{
+	font-size: 0.48rem;
+	color: #333333;
+	margin-top: 0.26rem;
+	padding-left: 0.4rem;
+	font-weight: bold;
+}
+
+.tateBox .pictText{
+	width: 3.89rem;
+	display: block;
+	margin:0.34rem auto 0;
+}
+.percentBox  .percent{
+	position: relative;
+	margin-top: 0.53rem;
+	padding-right: 0.4rem;
+}
+.percentBox  .percent .percentWrap{
+	width: 1.76rem;
+	height: 0.08rem;
+	background-color: #dddddd;
+	border-radius: 3px;
+	position: relative;
+	margin-top: 0.16rem;
+	margin-right: 0.33rem;
+}
+.percent .percentWrap .percentRed{
+
+	position: absolute;
+	height: 0.08rem;
+	
+	left: 0;
+	top: 0;
+	background-color: #ff4249;
+
+}
+
+.tateBox .tateNumber{
+	font-size: 1rem;
+	color: #ff4249;
+	text-align: center;
+	margin-top: 0.25rem;
+}
+.tateBox .tateNumber b{
+	font-size: 0.5rem;
+	letter-spacing: normal;
+}
+.tateBox .tateText{
+	font-size: 12px;
+	color: #666666;
+	margin-top: 0.26rem;
+}
+
+[data-dpr="2"] .tateBox .tateText{
+	font-size: 24px;
+	
+}
+[data-dpr="3"] .tateBox .tateText{
+	font-size: 36px;
+	
+}
+[data-dpr="2"]  .tateDsp p{
+	font-size: 24px;
+}
+[data-dpr="3"]  .tateDsp p{
+	font-size: 36px;
+}
+.tateDsp p{
+	font-size: 12px;
+
+
+	padding: 0 0.6rem;
+	display: inline-block;
+	border-right: 0.013rem solid #cccccc;
+
+}
+.tateDsp p:last-child{
+	border-right:none
+}
+.tateDsp{
+	text-align: center;
+	margin-top: 0.3rem;
+}
+.tateBox{
+	text-align: center;
+
+}
+.tateBox .tateNow{
+	width: 7.24rem;
+	height: 0.96rem;
+	line-height: 0.96rem;
+	text-align: center;
+	font-size: 0.32rem;
+	color: #fff;
+	
+	border-radius: 0.13rem;
+	display: block;
+	margin: 0.5rem auto 0px;
+
+	background: -webkit-linear-gradient(left , #ff6407 , #ff2326); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient( left, #ff6407 , #ff2326); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient( left, #ff6407 , #ff2326); /* Firefox 3.6 - 15 */
+  background: linear-gradient( left, #ff6407 , #ff2326); /* 标准的语法 */
+	box-shadow:0 5px 8px #ffc5bf ;
+}
+
+
+
+.idxtitle{
+	margin-top: 0.3125rem;
+	font-size:0.48rem;
+	color: #333333;
+	line-height: 1.2rem;
+	padding-left: 0.4rem;
+	background-color: #fff;
+	border-bottom: 0.013rem solid #ededed;
+
+	font-weight: bold;
+}
+
+.choicetext .choiceName{
+	color: #333333;
+	font-size: 15px;
+	position: relative;
+	padding-left: 0.37rem;
+	font-weight: 700;
+}
+
+.choicetext .choiceName::after{
+	content:'';
+	position: absolute;
+	width: 0.13rem;
+	height: 0.13rem;
+	display: block;
+	background:#00a0e9;
+	border-radius: 50%;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+[data-dpr="2"] .choicetext .choiceName{
+	font-size: 30px;
+}
+[data-dpr="3"] .choicetext .choiceName{
+	font-size: 45px;
+}
+.choicelist ul li a{
+	display: block;
+	padding-bottom: 0.4rem;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.choicetext .fr{
+	font-size: 13px;
+	color: #666666;
+}
+[data-dpr="2"] .choicetext .fr{
+	font-size: 26px;
+	
+}
+[data-dpr="3"] .choicetext .fr{
+	font-size: 39px;
+	
+}
+
+.choiceDsp .choiceLeft{
+	width: 44%;
+
+}
+.choiceDsp .choiceRight{
+	width: 56%;
+}
+
+[data-dpr="2"] .choiceDsp .choiceLeft .choiceRate{
+	font-size: 60px;
+
+}
+[data-dpr="3"] .choiceDsp .choiceLeft .choiceRate{
+	font-size: 90px;
+
+}
+.choiceDsp .choiceLeft .choiceRate{
+	font-size: 30px;
+	color: #ff4249;
+	position: relative;
+}
+.choiceLeft .choiceRate .choiceAdd{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	font-size: 18px;
+}
+[data-dpr="2"] .choiceRate .choiceAdd{
+	font-size: 36px;
+}
+[data-dpr="3"] .choiceRate .choiceAdd{
+	font-size: 54px;
+}
+
+.choiceDsp .choiceLeft  .choiceText{
+	color: #666666;
+	font-size: 12px;
+}
+
+[data-dpr="2"]  .choiceDsp .choiceLeft  .choiceText{
+	font-size: 24px;
+}
+[data-dpr="3"] .choiceDsp .choiceLeft   .choiceText{
+	font-size: 36px;
+}
+.choiceRatePer{
+	position: relative;
+}
+
+.choiceNumer .choiceBar{
+	width: 1.76rem;
+	height: 0.08rem;
+    background-color: #dddddd;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 0.24rem;
+}
+.choiceNumer .choiceBar .choiceRed{
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	background-color: #ff4249;
+	border-radius: 50px;
+}
+
+.choiceNumer .choicePer{
+	font-size: 16px;
+	color: #ff4249;
+
+}
+
+[data-dpr="2"]  .choiceNumer .choicePer{
+	font-size: 32px;
+	
+
+}
+[data-dpr="3"]  .choiceNumer .choicePer{
+	font-size: 48px;
+	
+
+}
+
+.choiceTerm .TermText{
+	font-size: 12px;
+	color: #666666;
+	padding-right: 0.4rem;
+	border-right: 0.013rem solid #212121;
+}
+[data-dpr="2"]  .choiceTerm .TermText{
+	font-size: 24px;
+	
+}
+
+[data-dpr="3"]  .choiceTerm .TermText{
+	font-size: 36px;
+	
+}
+.choiceTerm .residue {
+	font-size: 12px;
+	color: #666666;
+	margin-left: 0.4rem;
+	float: left;
+}
+.choiceTerm{
+ margin-top: 0.2rem;
+}
+
+.choiceNumer{
+	margin-top: 0.27rem;
+}
+
+.choiceDsp{
+	margin-top: 0.3rem;
+}
+
+[data-dpr="2"]  .choiceTerm .residue{
+	font-size: 24px;
+
+}
+
+[data-dpr="3"]  .choiceTerm .residue{
+	font-size: 36px;
+}
+
+.choiceTerm{
+	margin-top: 0.26rem;
+}
+
+.choiceNumer{
+	margin-top: 0.26rem;
+}
+
+.choicelist{
+	background-color: #fff;
+}
+
+.choicelist ul li {
+  padding: 0.4rem 0.4rem 0 0.4rem;
+}
+
+.choiceDsp{
+	margin-top: 0.4rem;
+}
+
+
+.rading{
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	padding:0.46rem 0rem 0 0rem;
+}
+
+.rading div{
+	width: 33.3333%;
+	float: left;
+	box-sizing: border-box;
+	padding:0 0.3rem;
+}
+
+.Media img{
+	display:block;
+	width: 2.46rem;
+	margin:0.8rem auto 0rem;
+}
+.Media{
+	text-align: center;
+}
+#main{
+	background: #fff;
+}
+
+.bottomTip{
+	display: inline-block;
+	color: #999999;
+	font-size: 0.32rem;
+	padding:0.46rem 0px;
+	position: relative;
+}
+.bottomTip:after{
+	content: "";
+	position: absolute;
+	width: 0.4rem;
+	height: 0.026rem;
+	background: #e0e0e0;
+	left:-0.53rem ;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.bottomTip:before{
+	content: "";
+	position: absolute;
+	width: 0.4rem;
+	height: 0.026rem;
+	background: #e0e0e0;
+	right:-0.53rem;
+	top: 50%;
+	transform: translateY(-50%);
+}

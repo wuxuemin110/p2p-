@@ -1,0 +1,38 @@
+<style type="text/css">
+	.footerNav a p{
+		width: 2.5rem;
+		position: absolute;
+		bottom: 0.05rem;
+		text-align: center;
+		color: #bfbfbf;
+	}
+	.footerNav .actice p{
+		color: #ff4249;
+	}
+</style>
+<div id="footer">
+     <div class="footerNav">
+     	 <ul>
+     	 	<li ng-class="{'actice':currentLi==1}">
+     	 		<a href="/mobile/index" class="footIndex">
+     	 				<p>首 页</p>
+     	 		</a>
+     	 	</li>
+     	 	<li ng-class="{'actice':currentLi==2}">
+     	 		<a href="/mobile/planList" class="footInvest">
+     	 				<p>投 资</p>
+     	 		</a>
+     	 	</li>
+     	 	<li ng-class="{'actice':currentLi==3}">
+     	 		<a href="/mobile/aboutUs" class="footFind">
+     	 				<p>发 现</p>
+     	 		</a>
+     	 	</li>
+     	 	<li ng-class="{'actice':currentLi==4}">
+     	 		<a href="/mobile/user/index" class="footMy">
+     	 			<p>我 的</p>
+     	 		</a>
+     	 	</li>
+     	 </ul>
+     </div>
+</div>

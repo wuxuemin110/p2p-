@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="mobile/resource/css/static.css">
+
+<div class="container">
+	<div class="newContent">
+			<h3><span ng-bind-html="Notices.title | DHtml"></span></h3>
+			
+		<span class="date">{{Notices.updatedTime | newDate:'yyyy-MM-dd HH:mm:ss'}}</span>
+			<div ng-bind-html="Notices.content | DHtml" class="newWord">
+
+			</div>
+	</div>
+</div>

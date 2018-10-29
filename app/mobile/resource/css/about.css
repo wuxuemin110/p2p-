@@ -1,0 +1,238 @@
+ body {
+ 	font-family:  "微软雅黑" !important;
+ }
+ 
+ .bannerDiv,.guideBanner{
+ 	padding: 0px;
+ 	width: 100%;
+ 	margin: 0px;
+ 	position: relative;
+ }
+ 
+ .bannerDiv img,.guideBanner img {
+ 	vertical-align: top;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	width: 100%;
+ 	border: none;
+ 	height: auto;
+ 	display: block;
+ }
+ 
+ .aboutContent {
+ 	margin: 0px 0.72rem;
+ }
+ 
+ .aboutData {
+ 	width: 6.84rem;
+ 	margin: 0px auto;
+ 	overflow: hidden;
+ }
+ 
+ .aboutData ul {
+ 	width: 100%;
+ 	overflow: hidden;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ 
+ .aboutData ul li {
+ 	margin: 0px 0.72rem;
+ 	padding: 0px;
+ 	float: left;
+ 	width: 0.84rem;
+ 	padding-bottom: 0.28rem;
+ }
+ 
+ .aboutDataCon {
+ 	width: 100%;
+ 	overflow: hidden;
+ 	margin-top: 0.6rem;
+ 	margin-bottom: 0.52rem;
+ }
+ 
+ .aboutDataCon ul {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ 
+ .aboutDataCon li {
+ 	width: 100%;
+ 	margin: 0px 0px;
+ 	float: left;
+ 	font-size: 14px;
+ 	cursor: pointer;
+ 	
+ 	display: none;
+ }
+ 
+ [data-dpr="2"] .aboutDataCon li {
+ 	font-size: 28px;
+ }
+ 
+ [data-dpr="3"] .aboutDataCon li {
+ 	font-size: 42px;
+ }
+ 
+ .aboutDataCon li p {
+ 	width: 100%;
+ 	text-align: center;
+ 	font-size: 16px;
+ 	font-weight: bold;
+ 	color: #666;
+ 	margin: 0px;
+ }
+ [data-dpr="2"] .aboutDataCon li p {
+ 	font-size: 32px;
+ }
+ 
+ [data-dpr="3"] .aboutDataCon li p {
+ 	font-size: 48px;
+ }
+ .aboutDataCon li i {
+ 	width: 100%;
+ 	color: #666;
+ 	display: inline-block;
+ 	height: 5rem;
+ 	margin-top: 0.56rem;
+ 	line-height: 160%;
+ }
+ .aboutDataCon .aboutCurrent{
+ 	display: block;
+ 	
+ }
+ /*.aboutimg {
+ 	-webkit-transition: 0.6s;
+ 	-webkit-transition: -webkit-transform 0.6s ease-out;
+ 	transition: transform 0.6s ease-out;
+ 	-moz-transition: -moz-transform 0.6s ease-out;
+ }
+ 
+ .aboutimg:hover {
+ 	transform: rotateZ(360deg);
+ 	-webkit-transform: rotateZ(360deg);
+ 	-moz-transform: rotateZ(360deg);
+ }*/
+ .liCurrent{
+ 	border-bottom: 4px solid #DF0707;
+ }
+ .aboutimg1 {
+ 	background: url(../images/about/aboutimg1.png) no-repeat 0px 0px;
+ 	background-size: 100% 100%;
+ 	width: 0.84rem;
+ 	height: 0.84rem;
+ 	margin: 0px auto;
+ }
+ .liCurrent .aboutimg1 {
+ 	background: url(../images/about/aboutimgOn1.png) no-repeat 0px 0px;
+ 	background-size: 100% 100%;
+ 	width: 0.84rem;
+ 	height: 0.84rem;
+ 	margin: 0px auto;
+ }
+ .aboutimg2 {
+ 	background: url(../images/about/aboutimg2.png) no-repeat 0px 0px;
+ 	background-size: 100% 100%;
+ 	width: 0.84rem;
+ 	height: 0.84rem;
+ 	margin: 0px auto;
+ }
+ .liCurrent .aboutimg2 {
+ 	background: url(../images/about/aboutimgOn2.png) no-repeat 0px 0px;
+ 	background-size: 100% 100%;
+ 	width: 0.84rem;
+ 	height: 0.84rem;
+ 	margin: 0px auto;
+ }
+ .aboutimg3 {
+ 	background: url(../images/about/aboutimg3.png) no-repeat 0px 0px;
+ 	background-size: 100% 100%;
+ 	width: 0.84rem;
+ 	height: 0.84rem;
+ }
+ 
+.liCurrent .aboutimg3 {
+ 	background: url(../images/about/aboutimgOn3.png) no-repeat 0px 0px;
+ 	background-size: 100% 100%;
+ 	width: 0.84rem;
+ 	height: 0.84rem;
+ 	margin: 0px auto;
+ }
+ 
+
+.productIntruduction {
+ 	margin: 0px;
+ }
+ 
+ .productIntruductionTop {
+ 	width: 100%;
+ 	margin: 0px auto;
+ 	overflow: hidden;
+ }
+ 
+ .productIntruductionTop ul {
+ 	width: 100%;
+ 	overflow: hidden;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	
+ }
+ 
+ .productIntruductionTop ul li {
+ 	height: 1.0625rem;
+ 	line-height: 1.0625rem;
+ 	margin: 0px 1.5rem;
+ 	padding: 0px;
+ 	float: left;
+ 	width: 2rem;
+ 	color: #868693;
+ 	font-size: 14px;
+ 	font-weight: 600;
+ 	text-align: center;
+ 	border-bottom: 0.0625rem solid  transparent;
+ }
+ 
+ [data-dpr="2"] .productIntruductionTop ul li {
+ 	font-size: 28px;
+ }
+ 
+ [data-dpr="3"] .productIntruductionTop ul li {
+ 	font-size: 42px;
+ }
+ 
+ .productIntruductionTop .liIndex{
+ 	border-bottom: 0.0625rem solid #e20214;
+ 	color: #e20214;
+ }
+ .productIntruductionCon {
+ 	width: 100%;
+ 	overflow: hidden;
+ 	/*margin-top: 0.6rem;
+ 	margin-bottom: 0.52rem;*/
+ }
+ 
+ .productIntruductionCon ul {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ 
+ .productIntruductionCon li {
+ 	width: 100%;
+ 	margin: 0px 0px;
+ 	float: left;
+ 	cursor: pointer;
+ 	display: none;
+ }
+ .productIntruductionCon li img {
+    vertical-align: top;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	width: 100%;
+ 	border: none;
+ 	height: auto;
+ 	display: block;
+ }
+ .productIntruductionCon .productCurrent{
+ 	display: block;
+ 	 }
+ /**/

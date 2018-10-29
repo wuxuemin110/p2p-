@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dd9283a6-e6fd-4ab4-bdc8-d2cb822e1709" name="120.76.200.147" url="http://120.76.200.147">
+        <fileTransfer host="120.76.200.147" port="22" rootFolder="/var/www/xuexd.com" accessType="SFTP" password="dfeddffadfc0dffcdf9ddfd0dfdfdfd3dfe0dfc8dfe7dfce" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="23538937-0270-4315-b628-7422027903f9" name="120.76.44.113" url="http://120.76.44.113">
+        <fileTransfer host="120.76.44.113" port="22" rootFolder="/var/www/html/xuexd-web" accessType="SFTP" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

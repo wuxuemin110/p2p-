@@ -1,0 +1,139 @@
+<title>
+	充值</title>
+<div ng-cloak>
+	<div class="userWithdrawBg">
+		<div class="bankInfo padBot16">
+			<img ng-src="mobile/resource/images/user/{{bankInfo[0].bankCode}}.png">
+
+
+			<div class="bankInfoText">
+				<span>储蓄卡</span>
+				<font>{{bankInfo[0].bankName}}</font>
+				<br>{{bankInfo[0].cardNumber}}
+			</div>
+		</div>
+		<div class="bankeDiv">
+			<span>元</span>提现金额<input type="text" name="amount" class="rechargeInput" ng-model="tradeRecord.money" placeholder="充值金额不能少于100元/次" autocomplete="new-password">
+		</div>
+		<div class="bankeDiv">
+			<span></span>交易密码<input type="password" name="password" class="rechargeInput" placeholder="请输入支付密码" ng-model="tradeRecord.tradePassword" name="password" autocomplete="new-password">
+		</div>
+		<div class="bankCardBottom">
+			单笔限额{{bankInfo[0].currentLimit/1000000}}万，单日限额{{bankInfo[0].dayLimit/1000000}}万，单月限额{{bankInfo[0].monthLimit /1000000}}万
+		</div>
+		<div class="withdrawBtn" ng-click="recharge()">充值
+		</div>
+	</div>
+
+	<div class="center-container" >
+
+		<div class="chong">
+			
+			<!--正常浏览器提交到第三方的Form表单-->
+			<div class="modal fade" id="huichaoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+				<div class="modal-dialog" role="document" >
+					<div class="modal-content" >
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">×</span></button>
+							<h4 class="modal-title" id="myModalLabel1">确认充值？</h4>
+						</div>
+						<div class="modal-body">
+							<!--H5充值测试接口-->
+							<!--<form class="form-inline" target="blank" action="http://www-1.fuiou.com:18670/mobile_pay/h5pay/payAction.pay" method="post" name="forwardForm">-->
+							<!--H5充值正式接口-->
+							<form class="form-inline" target="blank" action="https://mpay.fuiou.com:16128/h5pay/payAction.pay" method="post" name="forwardForm">
+
+							
+								<input type="hidden" name="ENCTP" value="{{payBody.ENCTP}}">
+								<input type="hidden" name="VERSION" value="{{payBody.VERSION}}">
+								<input type="hidden" name="MCHNTCD" value="{{payBody.MCHNTCD}}">
+								<input type="hidden" name="FM" value="{{payBody.FM}}">
+								<input type="hidden" name="LOGOTP" value="{{payBody.LOGOTP}}">
+								<!--<input type="hidden" name="mchnt_cd" value="{{payBody.mchnt_cd}}">
+								<input type="hidden" name="order_id" value="{{payBody.order_id}}">
+								<input type="hidden" name="order_amt" value="{{payBody.order_amt}}">
+								<input type="hidden" name="user_type" value="{{payBody.user_type}}">
+								<input type="hidden" name="card_no" value="{{payBody.card_no}}">
+								<input type="hidden" name="page_notify_url" value="{{payBody.page_notify_url}}">
+								<input type="hidden" name="back_notify_url" value="{{payBody.back_notify_url}}">
+								<input type="hidden" name="cert_type" value="{{payBody.cert_type}}">
+								<input type="hidden" name="user_id" value="{{payBody.user_id}}">
+								<input type="hidden" name="cardholder_name" value="{{payBody.cardholder_name}}">
+								<input type="hidden" name="cert_no" value="{{payBody.cert_no}}">-->
+								
+								<center>
+									<button type="submit" class="btn btn-info" ng-click="showModal()">确认充值
+                                        </button>
+								</center>
+                             </form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--微信浏览器提交到第三方的Form表单-->
+			<div class="modal fade" id="WeChatModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+				<div class="modal-dialog" role="document" >
+					<div class="modal-content" >
+						<div class="modal-header" >
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">×</span></button>
+							<h4 class="modal-title" id="myModalLabel1">确认充值？</h4>
+						</div>
+						<div class="modal-body">
+							<!--H5充值测试接口-->
+							<!--<form class="form-inline" action="http://www-1.fuiou.com:18670/mobile_pay/h5pay/payAction.pay" method="post" name="forwardForm">-->
+							<!--H5充值正式接口-->
+							<form class="form-inline" action="https://mpay.fuiou.com:16128/h5pay/payAction.pay" method="post" name="forwardForm">
+
+								<input type="hidden" name="ENCTP" value="{{payBody.ENCTP}}">
+								<input type="hidden" name="VERSION" value="{{payBody.VERSION}}">
+								<input type="hidden" name="MCHNTCD" value="{{payBody.MCHNTCD}}">
+								<input type="hidden" name="FM" value="{{payBody.FM}}">
+								<input type="hidden" name="LOGOTP" value="{{payBody.LOGOTP}}">
+								<center>
+									<button type="submit" class="btn btn-info" ng-click="showModal()">确认充值
+                                        </button>
+								</center>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="top: -20px;">
+				<div class="modal-dialog" role="document" style="margin-top: 15%;">
+					<div class="modal-content">
+						<div class="modal-header" style="border-bottom: 0px solid #e5e5e5;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">×</span></button>
+							<h4 class="modal-title" id="myModalLabel">是否充值成功？</h4>
+						</div>
+						<div class="modal-footer" style="border-bottom: 1px solid #e5e5e5;">
+							<div class="row">
+								<div class="col-md-6">
+									<button type="button" class="btn btn-default btn-block" onclick="location.reload(true)">充值成功
+                                        </button>
+								</div>
+								<div class="col-md-6">
+									<button type="button" class="btn btn-default btn-block" data-dismiss="modal" aria-label="Close">充值失败，重新充值
+                                        </button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--fr end-->
+	<div class="clear"></div>
+<!--尾部-->
+<div ng-include="'mobile/templates/layout/bottom.html'"></div>
+<!--尾部结束-->
+</div>

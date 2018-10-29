@@ -1,0 +1,26 @@
+<head>
+	<title>平台公告</title>
+</head>
+
+<div ng-cloak>
+	<div class="weui-loadmore weui-loadmore_line weui-loadmore_dot" when-scrolled="selectPage()" ng-hide="isLastStationPage||isLocating">
+		<div class="noticesList">
+			<ul class="newUl">
+				<li ng-repeat="x in itemList">
+					<a href="/mobile/notices/{{x.id}}">
+						<div class="noticeTitle">{{x.title}}</div>
+						<div class="noticeDate">{{x.updatedTime|newDate:'yyyy-MM-dd'}}</div>
+
+					</a>
+				</li>
+			</ul>
+
+		
+		
+	</div>
+	<span class="noMore fontSize14" ng-if="noMore">没有更多了</span>
+	</div>
+	<div>
+		<div ng-include="'mobile/templates/layout/bottom.html'"></div>
+	</div>
+</div>

@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/mobile/resource/css/index.css" line="4198" mnemonic="4" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="241c9024-97f8-49f0-8cb5-962c91a3f9fe" name="Default" comment="bug" />
+    <ignored path="xuexd-web.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="xuexd-web" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>loginBtn</find>
+      <find>.registerwarp .check-inner a</find>
+      <find>#z_code</find>
+      <find>.investPlan .investPlanLi</find>
+      <find>choiceNumer</find>
+      <find>choiceRate</find>
+      <find>userPageTop</find>
+      <find>wo</find>
+      <find>.findItem .findDsp ul li</find>
+      <find>beforePostInvestment</find>
+      <find>btnBg</find>
+      <find>立即</find>
+      <find>mobile/resource/js/jquery.lazyload.js</find>
+      <find>rechargeData</find>
+      <find>getUserCard</find>
+      <find>UserWithdrawService</find>
+      <find>bankInfoText</find>
+      <find>recharge</find>
+      <find>la</find>
+      <find>z_friendNumWrap</find>
+      <find>z_friendNum</find>
+      <find>.z_friendNum</find>
+      <find>lazyload</find>
+      <find>tea</find>
+      <find>欣冠</find>
+      <find>investmentCourtesy</find>
+      <find>evaluationResult</find>
+      <find>aboutUsimg5</find>
+      <find>DragonBoatJie</find>
+      <find>z_bigimg</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>泰千利</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="deposit" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/ReCast.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/user/userSafeCenter.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/user/userSafeCenter.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/payment.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/payment.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/ActiveFirst.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/ActiveFirst.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/JulySummer.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveFirst.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveSecond.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveThree.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveThree.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/invitFriend.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/invitFriend.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/tqabout.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqonlineMarking.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/user/tqnotices.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/user/tqnotices.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqnewGuestWelfare.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqcontinueVote.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/tqredPacketRule.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/tqredPacketRule.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/tqwithdrawRule.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/withdrawRule.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/tqwithdrawRule.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqinvitFriend.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/tqplanDescription.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/noviceExpress.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/tqnoviceExpress.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/tqregistration.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/static/tqregistration.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqnewGuestWelfare.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqcontinueVote.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqinvitFriend.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/tqplanDescription.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/tqnoviceExpress.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqonlineMarking.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqDragonBoatJie.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/activities/tqDragonBoatJie.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveThree.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveSecond.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveFirst.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveFirst.js" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveThree.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveFirst.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/about.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/about/tqabout.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveSecond.html" />
+        <option value="$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveSecond.html" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-animate/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-aria/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-loader/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-material/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-messages/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-mocks/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular-route/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/angular/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/app/mobile/bower_components/ng-infinite-scroll/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="327" />
+    <option name="y" value="112" />
+    <option name="width" value="1372" />
+    <option name="height" value="733" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="xinguan-H5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinguan-H5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinguan-H5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinguan-H5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinguan-H5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinguan-H5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinguan-H5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinguan-H5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinguan-H5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinguan-H5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="about" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xinguan-H5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xinguan-H5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registerActive" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="101" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="131" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="130" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="923" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="118" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="125" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="124" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="918" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../planGame" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="241c9024-97f8-49f0-8cb5-962c91a3f9fe" name="Default" comment="" />
+      <created>1477767288422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1477767288422</updated>
+      <workItem from="1477767291444" duration="75000" />
+      <workItem from="1477767389534" duration="829000" />
+      <workItem from="1477878926705" duration="2387000" />
+      <workItem from="1477902999607" duration="1980000" />
+      <workItem from="1477929717253" duration="183000" />
+      <workItem from="1477965353979" duration="5193000" />
+      <workItem from="1478071843097" duration="2669000" />
+      <workItem from="1478136691062" duration="7920000" />
+      <workItem from="1478481361188" duration="641000" />
+      <workItem from="1478482019128" duration="5637000" />
+      <workItem from="1478593358207" duration="1198000" />
+      <workItem from="1478658956298" duration="11543000" />
+      <workItem from="1478749244262" duration="4157000" />
+      <workItem from="1478834349350" duration="1209000" />
+      <workItem from="1478870666802" duration="591000" />
+      <workItem from="1478955972132" duration="1000" />
+      <workItem from="1478959606773" duration="1000" />
+      <workItem from="1479015220063" duration="1000" />
+      <workItem from="1479021095516" duration="1219000" />
+      <workItem from="1479283638492" duration="2309000" />
+      <workItem from="1479344481845" duration="3747000" />
+      <workItem from="1479363668100" duration="8674000" />
+      <workItem from="1479611049590" duration="2514000" />
+      <workItem from="1479712260096" duration="1893000" />
+      <workItem from="1479719068494" duration="20511000" />
+      <workItem from="1479777931034" duration="1842000" />
+      <workItem from="1480045909244" duration="1070000" />
+      <workItem from="1480322528881" duration="9061000" />
+      <workItem from="1480557678416" duration="1227000" />
+      <workItem from="1480996471732" duration="3622000" />
+      <workItem from="1481072419819" duration="4988000" />
+      <workItem from="1481158683697" duration="9872000" />
+      <workItem from="1532314334440" duration="19810000" />
+      <workItem from="1532394647761" duration="24927000" />
+      <workItem from="1532481114119" duration="14947000" />
+      <workItem from="1532505523647" duration="54000" />
+      <workItem from="1532673326585" duration="7078000" />
+      <workItem from="1534486542683" duration="2156000" />
+      <workItem from="1534832298476" duration="1037000" />
+      <workItem from="1536559574962" duration="3720000" />
+      <workItem from="1536718978776" duration="12030000" />
+      <workItem from="1536908442697" duration="3048000" />
+    </task>
+    <task id="LOCAL-00001" summary="bug 显示问题">
+      <created>1477978301155</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1477978301155</updated>
+    </task>
+    <task id="LOCAL-00002" summary="bug 显示问题">
+      <created>1477978335725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1477978335725</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bug 显示问题">
+      <created>1477978444033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1477978444033</updated>
+    </task>
+    <task id="LOCAL-00004" summary="还原 bug">
+      <created>1478509315004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1478509315004</updated>
+    </task>
+    <task id="LOCAL-00005" summary="内部单">
+      <created>1478659119328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1478659119328</updated>
+    </task>
+    <task id="LOCAL-00006" summary="bug 显示问题">
+      <created>1479365295723</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1479365295723</updated>
+    </task>
+    <task id="LOCAL-00007" summary="bug 显示问题">
+      <created>1479367136103</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1479367136103</updated>
+    </task>
+    <task id="LOCAL-00008" summary="企业开户">
+      <created>1479750058671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1479750058671</updated>
+    </task>
+    <task id="LOCAL-00009" summary="bug">
+      <created>1481029947711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1481029947711</updated>
+    </task>
+    <task id="LOCAL-00010" summary="bug">
+      <created>1481085874937</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1481085874937</updated>
+    </task>
+    <task id="LOCAL-00011" summary="bug">
+      <created>1481258511994</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1481258511994</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="207571000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945474" visible="true" weight="0.20021075" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.14451827" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28135222" />
+      <window_info id="Favorites" order="3" sideWeight="0.50054526" side_tool="true" weight="0.20021075" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="8" weight="0.47508305" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.14451827" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28135222" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.47508305" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20021075" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="还原 bug" />
+    <MESSAGE value="内部单" />
+    <MESSAGE value="bug 显示问题" />
+    <MESSAGE value="企业开户" />
+    <MESSAGE value="bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqcontinueVote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/redPacketRule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="11" lean-forward="true" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/redPacketRule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/tqredPacketRule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/tqredPacketRule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/withdrawRule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="11" lean-forward="true" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/tqwithdrawRule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/withdrawRule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/tqwithdrawRule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/invitFriend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="22" lean-forward="true" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/invitFriend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="118" column="27" lean-forward="true" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqinvitFriend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/planDescription.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/planDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/tqplanDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/noviceExpress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="5" lean-forward="true" selection-end-line="89" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/noviceExpress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="46" lean-forward="true" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/tqregistration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/questionnaire.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/tqnoviceExpress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="1" selection-end-line="116" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/tqregistration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/tqnoviceExpress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/tqplanDescription.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqinvitFriend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="147" column="58" lean-forward="true" selection-start-line="147" selection-start-column="58" selection-end-line="147" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqcontinueVote.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqnewGuestWelfare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="67" column="81" lean-forward="true" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqonlineMarking.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/questionnaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3762" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/static/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/DragonBoatJie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="7" lean-forward="true" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/DragonBoatJie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqDragonBoatJie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/activities/tqDragonBoatJie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveThree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="8" lean-forward="true" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveThree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveSecond.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveSecond.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveFirst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveFirst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveThree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveFirst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveFirst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveThree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="164" column="25" lean-forward="true" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/tqabout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/ActiveSecond.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mobile/templates/registerActive/tqActiveSecond.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="186" column="62" lean-forward="true" selection-start-line="186" selection-start-column="62" selection-end-line="186" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="109" column="11" lean-forward="true" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

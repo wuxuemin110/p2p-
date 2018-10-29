@@ -1,0 +1,178 @@
+<!--头部-->
+<div ng-cloak>
+<div ng-include="'templates/layout/top.html'"></div>
+<!--头部结束-->
+<link rel="stylesheet" href="resource/css/about.css" type="text/css">
+<style type="text/css">
+    body {
+        font-family: "Microsoft YaHei", "微软雅黑" !important;
+        font-size: 14px !important;
+    }
+   
+</style>
+<div class="helpBg">
+<div class="helpBanner">
+	
+</div>
+<div class="helpSelf">
+	<h2>
+		自助服务
+	</h2>
+	<span>快捷服务，帮你快速解决问题。</span>
+	<ul>
+		<li>
+			<a href="/user/userSafeCenter">
+				<span class="one"></span>
+			    <i>修改登陆密码</i>
+			</a>
+			
+		</li>
+		<li>
+			<a href="/user/userSafeCenter">
+				<span class="two"></span>
+			    <i>修改交易密码</i>
+			</a>
+		</li>
+		<li>
+			<a href="/user/userBankCard">
+				<span class="three"></span>
+			    <i>绑定银行卡</i>
+			</a>
+		</li>
+		<li>
+			<a href="/user/userInvite">
+				<span class="four"></span>
+			    <i>查询推广记录</i>
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="regularService">
+	<h2>常规服务</h2>
+	<span>为您答疑，让理财更放心。</span>
+	<div class="regularServiceData">
+		 <ul class="topUl">
+		 	<li ng-class="{'activeLi':liIndex==1}" ng-click="liIndex=1">常见问题</li>
+		 	<li ng-class="{'activeLi':liIndex==2}" ng-click="liIndex=2" style="border-left: 1px solid #fff; border-right: 1px solid #fff;">产品介绍</li>
+		 	<li ng-class="{'activeLi':liIndex==3}" ng-click="liIndex=3">名词解释</li>
+		 </ul>
+		 
+		<div ng-show="liIndex==1">
+			 <div class="leftProblem">
+			 	   <ul>
+			 	   	  <li ng-class="{'leftProblemLi':leftProblem1==1}" ng-click="leftProblem1=1"><i></i>关于注册和登陆</li>
+			 	   	  <li ng-class="{'leftProblemLi':leftProblem1==2}" ng-click="leftProblem1=2"><i></i>关于存管银行开户</li>
+			 	   	   <li ng-class="{'leftProblemLi':leftProblem1==3}" ng-click="leftProblem1=3"><i></i>关于充值和提现</li>
+			 	   	    <li ng-class="{'leftProblemLi':leftProblem1==4}" ng-click="leftProblem1=4"><i></i>关于红包</li>
+			 	   	     <li ng-class="{'leftProblemLi':leftProblem1==5}" ng-click="leftProblem1=5"><i></i>关于投资</li>
+			 	   	     <li ng-class="{'leftProblemLi':leftProblem1==6}" ng-click="leftProblem1=6"><i></i>关于回款</li>
+			 	   </ul>
+			 </div>
+			 <div class="rightAnswerBg">
+			       <div class="rightAnswer" ng-show="leftProblem1==1">
+			       	    1、注册时收不到验证短信怎么办？<br>
+请确认您的手机是否因信号、欠费等原因收不到短信，检查手机是否安装短信拦截或过滤软件。请勿频繁操作发送短信，另外短信发送过程中可能会有延迟，请耐心等待。<br>
+2、如何让登录密码更安全？<br>
+欣冠登录密码可设置成6-20位数字与字母组合，建议您不要设置单一的数字或字母作为密码，可以使用较长且复杂的数字和字母组合提高强度，且尽量避免用生日等容易被猜中的密码，定期更换密码有助于账号安全。<br>
+3、注册后是否可以修改手机号？<br>
+不可以，为保障您的权益及账号安全，目前注册后无法自行修改手机号。
+
+			       </div>
+			       <div class="rightAnswer" ng-show="leftProblem1==2">
+			       	      1、未成年人可以开户吗？<br>
+不可以，因为未成年人没有完全的民事行为能力。<br>
+2、认证之后可以修改实名信息吗？<br>
+不能，认证之后代表您已在存管银行开户过，不能修改实名信息。<br>
+3、绑定的银行卡可以和实名信息不一致吗？<br>
+不可以，为保障您的账号资金安全，您绑定的银行卡必须和实名认证信息一致，不一致时不予通过。<br>
+4、企业可以开户吗？<br>
+作为投资人，平台暂不支持企业开户；作为借款人，支持企业开户，需联系平台，根据平台要求步骤进行开户认证。<br>
+			       </div>
+			       <div class="rightAnswer" ng-show="leftProblem1==3">
+			       	    1、可以用信用卡进行充值吗？<br>
+不可以，严禁信用卡充值、套现等行为，一经发现将予以处罚，绑定的银行卡只限储蓄卡。<br>
+2、充值和提现需要费用吗？<br>
+对于在欣冠的投资用户，充值免费，请您合理充值。每位理财用户单个自然月可免费提现3笔，100元起提，超出免费提现笔数，将收取手续费。<br>
+3、充值、提现一般什么时候可到账？<br>
+充值成功后即时到账，可在平台账户中心的可用余额中查看。提现24小时内到账，大于30万顺延工作日处理，请联系在线客服。充值提现如未及时到账请联系在线客服。<br>
+			       </div>
+			       <div class="rightAnswer" ng-show="leftProblem1==4">
+			       	   1、怎么可以获得红包？<br>
+在欣冠注册、邀请好友投资等会得到红包，另外会有不定期的活动，活动期间可免费发放红包等福利至投资人账户。<br>
+2、红包的金额可以提现吗？<br>
+欣冠的红包分为抵扣红包和现金红包，抵扣在购买理财产品时可以直接抵扣，不予提现。现金红包会直接充值到您的可用余额中，可以提现。
+			       </div>
+			        <div class="rightAnswer" ng-show="leftProblem1==5">
+			       	   1、如何投资<br>
+（1）注册欣冠金融理财账户；（2）完成实名认证、设置交易密码、绑定银行卡；（3）账户充值；（4）浏览理财产品，了解理财项目，输入金额，点击“立即投标”即可参与投资。<br>
+2、在未满标的情况下是否可以取消某笔投资<br>
+不可以，为了保证投资人和借款人的利益，投资人在投资后，已投资金将被冻结或已直接进入借款人账户，不可以取消。<br>
+3、如何拿回投资的本金和得到的收益？<br>
+您待收的本金和应得收益，会根据相应的还款方式定期返还到您的账户余额，您可在回款记录中查看每笔回款，回款后可以继续投资其他项目或提现。
+
+			       </div>
+			       <div class="rightAnswer" ng-show="leftProblem1==6">
+			       	 1、一般什么时候可回款？<br>
+回款根据借款人的实际操作，在回款日当天回款属于正常还款，如逾期回款投资人将会收到额外的逾期补偿，超过15日未还款的，由第三方保理机构无条件进行债权回购。
+
+			       </div>
+			 </div>
+		</div>
+		<div ng-show="liIndex==2">
+			<div class="leftProblem">
+			 	   <ul>
+			 	   	  <li ng-class="{'leftProblemLi':leftProblem2==1}" ng-click="leftProblem1=2"><i></i>什么是欣冠？</li> 
+			 	   </ul>
+			 </div>
+			  <div class="rightAnswerBg">
+			       <div class="rightAnswer" ng-show="leftProblem2==1">
+			       	   &nbsp;&nbsp;&nbsp;&nbsp;欣冠（www.91lzt.com），系杭州欣冠互联网科技有限公司开发运营的独立品牌，实缴注册资金五千万，是一家主要致力服务江浙地区具备一定资质和实力的建筑企业，为该类企业在参与政府重大工程和项目施工招标中为企业提供相应的投标保证金垫资服务，保障企业现有流动资金的金融信息服务平台。公司拥有严格的风险管理体系，来保障出借人的每一份钱，对获得成功申请借款的企业从缴纳工程保证金——政府接收单位开具的据/票——到监管票/据——投标未成功保证金退回——平台还款整个流程全程跟踪，来确保项目不错配等系列成熟风控流程。公司还拥有独立的技术开发团队及运营团队，真正秉承“用户至上、体验流畅、安全理财”的经营理念来为两端的出借人、借款人搭建一个便捷、轻松，放心的互联网金融平台。
+
+			       </div>
+			      </div>
+		</div>
+		<div ng-show="liIndex==3">
+			 <div class="leftProblem">
+			 	   <ul>
+			 	   	  <li ng-class="{'leftProblemLi':leftProblem3==1}" ng-click="leftProblem3=1"><i></i>红包</li>
+			 	   	  <li ng-class="{'leftProblemLi':leftProblem3==2}" ng-click="leftProblem3=2"><i></i>投标奖励</li>
+			 	   	   <li ng-class="{'leftProblemLi':leftProblem3==3}" ng-click="leftProblem3=3"><i></i>累计收益</li>
+			 	   	    <li ng-class="{'leftProblemLi':leftProblem3==4}" ng-click="leftProblem3=4"><i></i>累计投资</li>
+			 	   	     <li ng-class="{'leftProblemLi':leftProblem3==5}" ng-click="leftProblem3=5"><i></i>可用余额</li>
+			 	   	     <li ng-class="{'leftProblemLi':leftProblem3==6}" ng-click="leftProblem3=6"><i></i>账户总额</li>
+			 	   	     <li ng-class="{'leftProblemLi':leftProblem3==7}" ng-click="leftProblem3=7"><i></i>预期年化</li>
+			 	   </ul>
+			 </div>
+			 <div class="rightAnswerBg">
+			       <div class="rightAnswer" ng-show="leftProblem3==1">
+			       	    欣冠的红包分为抵扣红包和现金红包，抵扣在购买理财产品时可以直接抵扣，不予提现。现金红包会直接充值到您的可用余额中，可以提现。
+			       </div>
+			        <div class="rightAnswer" ng-show="leftProblem3==2">
+			       	  指用户在投标后获得利息以外，还会额外获得固定或百分比的投标金额奖励。
+			       </div>
+			        <div class="rightAnswer" ng-show="leftProblem3==3">
+			       	  指用户在欣冠加入各理财产品累计赚取的收益总和。
+			       </div>
+			        <div class="rightAnswer" ng-show="leftProblem3==4">
+			       	  指用户在欣冠累计加入各理财产品的资金总和（包含已使用的红包金额）。
+			       </div>
+			        <div class="rightAnswer" ng-show="leftProblem3==5">
+			       	  指可以用来进行提现或者投资的金额。
+			       </div>
+			        <div class="rightAnswer" ng-show="leftProblem3==6">
+			       	 账户总额=可用余额+待收总额+冻结金额。
+			       </div>
+			        <div class="rightAnswer" ng-show="leftProblem3==7">
+			       	  借款人支付的利息折算到年所对应的收益率。
+			       </div>
+			 </div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!--尾部-->
+<div><div ng-include="'templates/layout/bottom.html'"></div></div>
+<!--尾部结束-->
+</div>
